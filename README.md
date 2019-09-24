@@ -1,0 +1,2 @@
+# I-TALENTED
+JavaScript, HTML5, CSS3
