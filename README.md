@@ -1,5 +1,6 @@
 # I-TALENTED
-##JavaScript, HTML5, CSS3
+JavaScript, HTML5, CSS3
+------------------------
 ### Project to practice JavaScript
 #### A website for fictional model agency
 ##### Tooltips and comments may be written in Korean.
