@@ -158,6 +158,7 @@ function loadManData(){
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
+			alert('readyState진입 성공');
 			listData(this);
 		}else{
 			alert('실패!');
@@ -169,6 +170,7 @@ function loadManData(){
 loadManData();
 
 function listData(xml){
+	alert('listData진입 성공');
 	let i = 0;
 	const xmlDoc = xml.responseXML;
 	
