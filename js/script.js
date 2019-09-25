@@ -179,7 +179,7 @@ function listData(xml){
 	
 	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
 		alert('자료를 넣는 중입니다. ' + i + '번째...');
-		name = xmlDoc.getElementsByTagName("person")[0].('name')[0].innerHTML;
+		name = xmlDoc.getElementsByTagName("person")[0].getElementsByTagName('name')[0].innerHTML;
 		img = xmlDoc.getElementsByTagName("image")[0].getElementsByTagName('image')[0].innerHTML;
 		person[i] = new regPerson(name, img);
 		console.log(person[i].name, person[i].img);
