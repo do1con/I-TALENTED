@@ -150,19 +150,19 @@ function styleHeader(){
 
 /* 탭 그리드 메뉴 */
 /* XML 파일 가져오기 */
-	function loadManData(){
-		var xhr = new XMLHttpRequest();
-		xhr.onreadystatechange = function(){
-			if(this.readyState == 4 && this.status == 200){
-				alert();
-			}else{
-				alert('실패!');
-			}
+function loadManData(){
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status == 200){
+			alert();
+		}else{
+			alert('실패!');
 		}
-		xhr.open("get", "data/manData.xml", true);
-		xhr.send();
 	}
-	loadManData();
+	xhr.open("get", "data/manData.xml", true);
+	xhr.send();
+}
+loadManData();
 
 /* 유틸성 함수 */
 /* index 구하기 */
