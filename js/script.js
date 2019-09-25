@@ -154,12 +154,12 @@ function loadManData(){
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
-			alert();
+			alert('성공');
 		}else{
 			alert('실패!');
 		}
 	}
-	xhr.open("get", "data/manData.xml", true);
+	xhr.open("get", "/data/manData.xml", true);
 	xhr.send();
 }
 loadManData();
