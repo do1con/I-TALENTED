@@ -159,7 +159,7 @@ function loadManData(){
 			alert('실패!');
 		}
 	}
-	xhr.open("get", "/data/manData.xml", true);
+	xhr.open("get", "/data/manList.xml", true);
 	xhr.send();
 }
 loadManData();
