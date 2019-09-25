@@ -88,7 +88,6 @@ function changeIndex(next){
 	const currentIndex = indexList.getElementsByClassName('on')[0];
 	const nextIndex = indexList.getElementsByTagName('li')[next-1];
 	const leftIndex = document.querySelector('#mainContent .leftSlideIndex');
-	nextIndex.insertAdjacentHTML('beforeend','<div class="activeLine"></div>');
 	currentIndex.getElementsByClassName('activeLine')[0].style.width = '0px';
 	currentIndex.getElementsByClassName('activeLine')[0].style.left = '100px';
 	nextIndex.getElementsByClassName('activeLine')[0].style.width = '0px';
@@ -169,7 +168,7 @@ function loadManData(){
 }
 loadManData();
 
-function ListData(xml){
+function listData(xml){
 	let i = 0;
 	const xmlDoc = xml.responseXML;
 	
