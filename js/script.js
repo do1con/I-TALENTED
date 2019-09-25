@@ -176,8 +176,8 @@ function listData(xml){
 	
 	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
 		alert('자료를 넣는 중입니다. ' + i + '번째...');
-		person[i].name = xmlDoc.getElementsByTagName("person")[0].find('name').innerHTML;
-		person[i].img = xmlDoc.getElementsByTagName("image")[0].find('name').innerHTML;
+		person[i].name = xmlDoc.getElementsByTagName("person")[0].getElementsByTagName('name').innerHTML;
+		person[i].img = xmlDoc.getElementsByTagName("image")[0].getElementsByTagName('image').innerHTML;
 		console.log(person[i].name, person[i].img);
 	}
 	let name = xmlDoc.getElementsByTagName("person")[0].find('name').innerHTML = name;
