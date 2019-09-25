@@ -169,7 +169,7 @@ function loadManData(){
 }
 loadManData();
 
-function Listdata(xml){
+function ListData(xml){
 	let i = 0;
 	const xmlDoc = xml.responseXML;
 	
