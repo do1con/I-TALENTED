@@ -154,7 +154,7 @@ function loadManData(){
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
-			alert('성공');
+			listData(this);
 		}else{
 			alert('실패!');
 		}
@@ -163,6 +163,15 @@ function loadManData(){
 	xhr.send();
 }
 loadManData();
+
+function Listdata(xml){
+	let i = 0;
+	const xmlDoc = xml.responseXML;
+	
+	let name = xmlDoc.getElementsByTagName("person")[0].find('name').innerHTML = name;
+	
+	document.getElementById('hithere').innerHTML = name;
+}
 
 /* 유틸성 함수 */
 /* index 구하기 */
