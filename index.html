@@ -1,0 +1,156 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>I TALENTED</title>
+	<meta http-equiv="Expires" content="-1"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Cache-Control" content="No-Cache"/>
+	<link rel="stylesheet" href="css/initialization.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body onscroll="styleHeader()">
+	<header>
+		<div class="headerWrap">
+			<ul>
+				<li>
+					<nav>
+						<button type="button" onclick="toggleMenu()">
+							<img src="img/menu.png" width="40" alt="open menu button"/>
+						</button>
+						<ul id="menu">
+							<li><a href="#">Introduce</a></li>
+							<li><a href="#">Male</a></li>
+							<li><a href="#">Female</a></li>
+							<li><a href="#">Child</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</li>
+				<li><a href="#">CLIENTS</a></li>
+				<li><a href="#">NEWS</a></li>
+				<li class="title">
+					<h1><a href="#">I TALENTED</a></h1>
+				</li>
+				<li class="searchArea">
+					<form action="" method="get">
+						<input type="text" id="search" name="search"/>
+						<input type="submit" class="searchBtn" value="" onmouseover="openSearchBar()"/>
+					</form>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section>
+		<div id="mainContent">
+			<div class="box1_1"></div>
+			<div class="lnb">
+				<ul class="sns">
+					<li><a href="#"><img src="img/facebook.png" alt="Facebook" width="20"/></a></li>
+					<li><a href="#"><img src="img/instagram.png" alt="Instagram" width="20"/></a></li>
+					<li><a href="#"><img src="img/youtube.png" alt="Youtube" width="20"/></a></li>
+					<li><a href="#"><img src="img/twitter.png" alt="Twitter" width="20"/></a></li>
+				</ul>
+			</div>
+			<div class="snsLine"></div>
+			<span class="leftSlideIndex">01</span>
+			<div id="mainSlide">
+				<div class="mainBox"></div>
+				<a href="#">VIEW PROFILE</a>
+				<button class="slideToggle" onclick="toggleSlide()"></button>
+				<div class="lineForDesign"></div>
+				<ul class="mainSlide">
+					<li class="active">
+						<img src="img/main_2.png" width="550" alt=""/>
+						<h2>Claire<br/>Elise Boucher</h2>
+						<h3>YOUNG MODEL 2019</h3>
+					</li>
+					<li>
+						<img src="img/main_2.png" width="550" alt=""/>
+						<h2>Claire<br/>Elise Boucher2</h2>
+						<h3>YOUNG MODEL 2019</h3>
+					</li>
+					<li>
+						<img src="img/main_2.png" width="550" alt=""/>
+						<h2>Claire<br/>Elise Boucher3</h2>
+						<h3>YOUNG MODEL 2019</h3>
+					</li>
+					<li>
+						<img src="img/main_2.png" width="550" alt=""/>
+						<h2>Claire<br/>Elise Boucher4</h2>
+						<h3>YOUNG MODEL 2019</h3>
+					</li>
+				</ul>
+				<div class="slideNav">
+					<ul>
+						<li class="on" onclick="slidedByIndex(this)"><button>01</button><div class="activeLine"></div></li>
+						<li onclick="slidedByIndex(this)"><button>02</button></li>
+						<li onclick="slidedByIndex(this)"><button>03</button></li>
+						<li onclick="slidedByIndex(this)"><button>04</button></li>
+					</ul>
+				</div><!-- <div class="slideNav"> -->
+			</div><!-- <div id="mainSlide"> -->
+		</div><!-- <div id="mainContent"> -->
+		<div id="tabGrid">
+			<ul class="tabMenu">
+				<li class="active"><button>MALE</button><div class="activeLine"></div></li>
+				<li><button>FEMALE</button></li>
+				<li><button>CHILD</button></li>
+				<li><button>SENIOR</button></li>
+			</ul>
+			<div class="maleList active">
+				<ul class="maleList" id="hithere">
+					
+				</ul>
+				<button>VIEW MORE</button>
+			</div>
+			<div class="femaleList"></div>
+			<div class="childList"></div>
+			<div class="seniorList"></div>
+		</div><!-- <div id="tabGrid"> -->
+	</section>
+	<footer>
+	
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
