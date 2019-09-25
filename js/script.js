@@ -149,7 +149,7 @@ function styleHeader(){
 
 /* 탭 그리드 메뉴 */
 /* XML 파일 가져오기 */
-function person(name, img){
+function regPerson(name, img){
 	this.name = name;
 	this.img = img;
 }
@@ -169,7 +169,7 @@ function loadData(){
 }
 loadManData();
 
-var person[];
+var person = new Array();
 function listData(xml){
 	alert('listData진입 성공');
 	let i = 0;
@@ -181,7 +181,7 @@ function listData(xml){
 		alert('자료를 넣는 중입니다. ' + i + '번째...');
 		name = xmlDoc.getElementsByTagName("person")[0].('name')[0].innerHTML;
 		img = xmlDoc.getElementsByTagName("image")[0].getElementsByTagName('image')[0].innerHTML;
-		person[i] = new person(name, img);
+		person[i] = new regPerson(name, img);
 		console.log(person[i].name, person[i].img);
 		document.querySelector('#tabGrid .maleList')
 	}
