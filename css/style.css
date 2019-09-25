@@ -49,6 +49,7 @@ section #mainContent #mainSlide .mainSlide li.active{display: block; opacity: 1;
 #mainSlide .slideNav ul li button{background-color: inherit; border: 0; font-family: Mont; font-size: 1em; letter-spacing: 4px; color: #a7a6aa; cursor: pointer;}
 #mainSlide .slideNav ul li.on button{color: #232323;}
 #mainSlide .slideNav ul li.on .activeLine{width: 130px; height: 2px; background-color: #232323; position: relative; left: 50px; top: -10px; transition: all 0.5s;}
+#mainSlide>.slideNav>ul>li>div{width: 0px; height: 2px; background-color: #232323; position: relative; left: 50px; top: -10px; transition: all 0.5s;}
 
 /**** MainSlide Ends ****/
 
