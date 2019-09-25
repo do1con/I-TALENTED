@@ -154,7 +154,7 @@ function person(name, img){
 	this.img = img;
 }
 
-function loadManData(){
+function loadData(){
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
@@ -169,6 +169,7 @@ function loadManData(){
 }
 loadManData();
 
+var person[];
 function listData(xml){
 	alert('listData진입 성공');
 	let i = 0;
@@ -178,15 +179,18 @@ function listData(xml){
 	
 	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
 		alert('자료를 넣는 중입니다. ' + i + '번째...');
-		name = xmlDoc.getElementsByTagName("person")[0].getElementsByTagName('name')[0].innerHTML;
+		name = xmlDoc.getElementsByTagName("person")[0].('name')[0].innerHTML;
 		img = xmlDoc.getElementsByTagName("image")[0].getElementsByTagName('image')[0].innerHTML;
-		var person[i] = new person(name, img);
+		person[i] = new person(name, img);
 		console.log(person[i].name, person[i].img);
+		document.querySelector('#tabGrid .maleList')
 	}
 	let name = xmlDoc.getElementsByTagName("person")[0].find('name').innerHTML = name;
 	
 	document.getElementById('hithere').innerHTML = name;
 }
+
+function 
 
 /* 유틸성 함수 */
 /* index 구하기 */
