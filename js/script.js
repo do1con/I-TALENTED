@@ -84,10 +84,10 @@ function toggleSlide(){
 }
 /* 인덱스 바꾸기 */
 function changeIndex(next){
-	const indexList = document.querySelector('#mainSlide .slideNav ul');
-	const currentIndex = indexList.getElementsByClassName('on')[0];
-	const nextIndex = indexList.getElementsByTagName('li')[next-1];
-	const leftIndex = document.querySelector('#mainContent .leftSlideIndex');
+	let indexList = document.querySelector('#mainSlide .slideNav ul');
+	let currentIndex = indexList.getElementsByClassName('on')[0];
+	let nextIndex = indexList.getElementsByTagName('li')[next-1];
+	let leftIndex = document.querySelector('#mainContent .leftSlideIndex');
 	currentIndex.getElementsByClassName('activeLine')[0].style.width = '0px';
 	currentIndex.getElementsByClassName('activeLine')[0].style.left = '100px';
 	nextIndex.getElementsByClassName('activeLine')[0].style.width = '0px';
