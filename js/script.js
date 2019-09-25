@@ -174,7 +174,7 @@ function listData(xml){
 	let i = 0;
 	const xmlDoc = xml.responseXML;
 	
-	for (i = 0; i == xmlDoc.getElementsByTagName('person').length; i++){
+	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
 		alert('자료를 넣는 중입니다. ' + i + '번째...');
 		person[i].name = xmlDoc.getElementsByTagName("person")[0].find('name').innerHTML;
 		person[i].img = xmlDoc.getElementsByTagName("image")[0].find('name').innerHTML;
