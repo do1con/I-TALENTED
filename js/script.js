@@ -150,6 +150,11 @@ function styleHeader(){
 
 /* 탭 그리드 메뉴 */
 /* XML 파일 가져오기 */
+var person = function(name, img){
+	this.name = name;
+	this.img = img;
+}
+
 function loadManData(){
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
@@ -168,6 +173,12 @@ function Listdata(xml){
 	let i = 0;
 	const xmlDoc = xml.responseXML;
 	
+	for (i = 0; i == xmlDoc.getElementsByTagName('person').length; i++){
+		alert('자료를 넣는 중입니다. ' + i + '번째...');
+		person[i].name = xmlDoc.getElementsByTagName("person")[0].find('name').innerHTML;
+		person[i].img = xmlDoc.getElementsByTagName("image")[0].find('name').innerHTML;
+		console.log(person[i].name, person[i].img);
+	}
 	let name = xmlDoc.getElementsByTagName("person")[0].find('name').innerHTML = name;
 	
 	document.getElementById('hithere').innerHTML = name;
