@@ -150,32 +150,19 @@ function styleHeader(){
 
 /* 탭 그리드 메뉴 */
 /* XML 파일 가져오기 */
-$.ajax({
-	url : 'data/manList.xml',
-	type : 'get',
-	dataType : 'xml',
-	beforeSend : function() {
-		alert( 'url 접근 전 입니다 :) ');
-		//ajax 동작 전 수행하고 싶은 내용을 입력 합니다. (로딩 이미지 출력 등)
-	},
-
-	success : function( result ) {
-		alert( '오류 없이 url 접근과 response 획득이 완료 되었습니다 :)' );
-		//정상적으로 획득한 response 응답 데이터로 수행하고 싶은 내용을 입력 합니다. (실제 데이터 처리)
-	},
-
-	error : function( result ) {
-		alert(result);
-		//오류 발생시 수행하고 싶은 내용을 입력 합니다.
-	},
-
-	complete : function() {
-		alert( 'ajax 동작이 완료 되었습니다 :)' );
-		//ajax 동작 완료 후 수행하고 싶은 내용을 입력 합니다. (로딩 이미지, 완료 문구 출력 등)
-		//success 또는 error 완료 후 수행 됩니다.
+	function loadManData(){
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function(){
+			if(this.readyState == 4 && this.status == 200){
+				alert();
+			}else{
+				alert('실패!');
+			}
+		}
+		xhr.open("get", "data/manData.xml", true);
+		xhr.send();
 	}
-
-});
+	loadManData();
 
 /* 유틸성 함수 */
 /* index 구하기 */
