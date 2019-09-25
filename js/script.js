@@ -149,7 +149,7 @@ function styleHeader(){
 
 /* 탭 그리드 메뉴 */
 /* XML 파일 가져오기 */
-var person = function(name, img){
+function person(name, img){
 	this.name = name;
 	this.img = img;
 }
@@ -172,12 +172,15 @@ loadManData();
 function listData(xml){
 	alert('listData진입 성공');
 	let i = 0;
+	let name = 0;
+	let img = 0;
 	const xmlDoc = xml.responseXML;
 	
 	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
 		alert('자료를 넣는 중입니다. ' + i + '번째...');
-		person[i].name = xmlDoc.getElementsByTagName("person")[0].getElementsByTagName('name')[0].innerHTML;
-		person[i].img = xmlDoc.getElementsByTagName("image")[0].getElementsByTagName('image')[0].innerHTML;
+		name = xmlDoc.getElementsByTagName("person")[0].getElementsByTagName('name')[0].innerHTML;
+		img = xmlDoc.getElementsByTagName("image")[0].getElementsByTagName('image')[0].innerHTML;
+		var person[i] = new person(name, img);
 		console.log(person[i].name, person[i].img);
 	}
 	let name = xmlDoc.getElementsByTagName("person")[0].find('name').innerHTML = name;
