@@ -212,7 +212,7 @@ function loadData(index, firstload){
 		}
 	}
 }
-loadData(currentTab);
+loadData(currentTab, true);
 
 function listData(xml){
 	let i = 0;
