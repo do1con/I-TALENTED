@@ -61,12 +61,14 @@ section #mainContent #mainSlide .mainSlide li.active{display: block; opacity: 1;
 #tabGrid .tabMenu li button{background-color: inherit; border: 0; font-family: Mont; font-size: 0.9em; letter-spacing: 2px; width: 100%; height: 60px; line-height: 60px; color: #343434;}
 #tabGrid .tabMenu li.active button{color: #212121;}
 #tabGrid .tabMenu li.active .activeLine{width: 100%; height: 3px; background-color: #000000;}
-#tabGrid .modelListBox{width: 1600px; height: 700px;}
-#tabGrid .modelList .modelList li{display: block; width: 400px; height: 600px; float: left;}
-#tabGrid .modelList .modelList li a{display: block; width: 100%; height: 100%; position: relative;}
-#tabGrid .modelList .modelList li a>img{position: absolute; left: 0; top: 0; z-index: 3;}
-#tabGrid .modelList .modelList li a>div{position: absolute; left: 0; top: 0; z-index: 4; opacity: 0; width: 100%; height: 100%;}
-#tabGrid .modelList .modelList li a:hover div{opacity: 1;}
+#tabGrid .modelListBox{width: 1400px; height: 700px;}
+#tabGrid .modelListBox .modelList li{display: block; width: 350px; height: 600px; float: left; overflow: hidden;}
+#tabGrid .modelListBox .modelList li a{display: block; width: 100%; height: 100%; position: relative;}
+#tabGrid .modelListBox .modelList li a>img{position: absolute; left: 0; top: 0; z-index: 3;}
+#tabGrid .modelListBox .modelList li a>div{position: absolute; left: 0; top: 0; z-index: 4; opacity: 0; width: 100%; height: 100%; background-color: rgba(10,10,10,0.5);}
+#tabGrid .modelListBox .modelList li a>div>img{margin-left: 330px; margin-top: 30px;}
+#tabGrid .modelListBox .modelList li a>div>h3{margin-top: 40px; text-align: center; color: #ffffff; font-size: 1.05em; font-family: Mont;}
+#tabGrid .modelListBox .modelList li a:hover div{opacity: 1;}
 #tabGrid .modelListBox button{display: block; margin-top: 40px; width: 200px; height: 50px; margin: 0 auto; border: 0; background-color: #222222; color: #ffffff; font-family: Mont; font-size: 0.8em; border-radius: 50px; letter-spacing: 3px;}
 
 /**** Tab Menu Ends ****/
