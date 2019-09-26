@@ -158,7 +158,7 @@ function regPerson(name, img){
 
 let currentTab = 0;
 function loadData(index){
-	if()
+	/* if() */
 	document.querySelector('#tabGrid .modelListBox .modelList').innerHTML = '';
 	document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
 	var xhr = new XMLHttpRequest();
