@@ -217,6 +217,7 @@ function listData(xml){
 	}
 	currentArray = i;
 	document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
+	console.log(currentArray);
 }
 
 /* 유틸성 함수 */
