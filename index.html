@@ -93,20 +93,20 @@
 				</div><!-- <div class="slideNav"> -->
 			</div><!-- <div id="mainSlide"> -->
 		</div><!-- <div id="mainContent"> -->
-		<div id="tabGrid">
-			<ul class="tabMenu">
-				<li class="active"><button>MALE</button></li>
-				<li><button>FEMALE</button></li>
-				<li><button>CHILD</button></li>
-				<li><button>SENIOR</button></li>
+		<div id="tabGrid" class="cf">
+			<ul class="tabMenu cf">
+				<li><button onclick="changeType(this)">MALE</button></li>
+				<li><button onclick="changeType(this)">FEMALE</button></li>
+				<li><button onclick="changeType(this)">CHILD</button></li>
+				<li><button onclick="changeType(this)">SENIOR</button></li>
 			</ul>
 			<div class="activeLine"></div>
-			<div class="modelListBox">
-				<ul class="modelList">
+			<div class="modelListBox cf">
+				<ul class="modelList cf">
 					
 				</ul>
 				<img src="img/loading.gif" alt="loading Models"/>
-				<button>VIEW MORE</button>
+				<button onclick="loadMore()">VIEW MORE</button>
 			</div>
 		</div><!-- <div id="tabGrid"> -->
 	</section>

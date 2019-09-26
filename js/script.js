@@ -151,21 +151,41 @@ function styleHeader(){
 
 /* 탭 그리드 메뉴 */
 /* XML 파일 가져오기 */
+let currentTab = 0;
+var person = new Array();
+let currentArray = 0;
+
 function regPerson(name, img){
 	this.name = name;
 	this.img = img;
 }
 
-let currentTab = 0;
-function loadData(index){
-	/* if() */
-	document.querySelector('#tabGrid .modelListBox .modelList').innerHTML = '';
+function loadMore(){
+	loadData(currentTab, false);
+	alert('더 불러');
+}
+
+function changeType(element){
+	if(currentTab === getChildNumber(element.parentNode) - 1){
+		loadData(currentTab, false);
+	}else if(currentTab != getChildNumber(element.parentNode) - 1){
+		currentArray = 0;
+		currentTab = getChildNumber(element.parentNode) - 1;
+		loadData(currentTab, true);
+		document.querySelector('#tabGrid .activeLine').style.marginLeft = (500 + ((getChildNumber(element.parentNode) - 1) * 150)) + 'px';
+		document.querySelector('#tabGrid .modelListBox .modelList').style.height = '0px';
+	}
+}
+function loadData(index, firstload){
+	if(firstload){
+		document.querySelector('#tabGrid .modelListBox .modelList').innerHTML = '';
+	}
 	document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
-			listData(this);
 			document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
+			listData(this);
 		}else{
 			document.querySelector('#tabGrid .modelListBox>img').style.display = 'block';
 		}
@@ -195,8 +215,6 @@ function loadData(index){
 }
 loadData(currentTab);
 
-var person = new Array();
-let currentArray = 0;
 function listData(xml){
 	let i = 0;
 	let name = 0;
@@ -207,7 +225,7 @@ function listData(xml){
 	let listHeight = modelData.offsetHeight;
 	modelData.style.height = (listHeight + 500) + 'px';
 	
-	for (i = 0; i != xmlDoc.getElementsByTagName('person').length && i <= 8; i++){
+	for (i = 0; i != xmlDoc.getElementsByTagName('person').length || i <= 8; i++){
 		name = xmlDoc.getElementsByTagName("person")[i + currentArray].getElementsByTagName('name')[0].innerHTML;
 		img = xmlDoc.getElementsByTagName("person")[i].getElementsByTagName('image')[0].innerHTML;
 		person[i] = new regPerson(name, img);
