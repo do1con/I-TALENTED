@@ -45,7 +45,7 @@ function changeSlide(nextSlide){
 		nextSlide.style.left = "50%";
 		nextSlide.setAttribute('class','active');
 	},500);
-	currentSlide = getChildNumber(nextSlide);
+	currentSlide = getChildNumber(nextSlide);;
 	changeIndex(currentSlide);
 	adaptAtag(currentSlide);
 }
@@ -54,9 +54,9 @@ function changeSlide(nextSlide){
 let intervalSlide = 0;
 function startSlide(){
 	intervalSlide = setInterval(function(){
-		let nextSlide = document.querySelector('#mainSlide .mainSlide .active').nextElementSibling;
-		if(nextSlide === null){
-			nextSlide = document.querySelector('#mainSlide .mainSlide').childNodes.item(1);
+		var nextSlide = document.querySelector('#mainSlide .mainSlide .active').nextElementSibling;
+		if(nextSlide == null){
+			nextSlide = document.querySelector('#mainSlide .mainSlide').firstElementChild;
 		}
 		changeSlide(nextSlide);
 	},2000);
@@ -84,22 +84,25 @@ function toggleSlide(){
 }
 /* 인덱스 바꾸기 */
 function changeIndex(next){
-	let indexList = document.querySelector('#mainSlide .slideNav ul');
-	let currentIndex = indexList.getElementsByClassName('on')[0];
-	let nextIndex = indexList.getElementsByTagName('li')[next-1];
-	let leftIndex = document.querySelector('#mainContent .leftSlideIndex');
+	/* alert(next); */
+	var indexList = document.querySelector('#mainSlide .slideNav ul');
+	var currentIndex = indexList.getElementsByClassName('on')[0];
+	if(next - 1 < 0){
+		next = 0 ;
+	}
+	var nextIndex = indexList.getElementsByTagName('li')[next-1];
+	var leftIndex = document.querySelector('#mainContent .leftSlideIndex');
 	currentIndex.getElementsByClassName('activeLine')[0].style.width = '0px';
 	currentIndex.getElementsByClassName('activeLine')[0].style.left = '100px';
 	nextIndex.getElementsByClassName('activeLine')[0].style.width = '0px';
 	nextIndex.getElementsByClassName('activeLine')[0].style.left = '100px';
 	setTimeout(function(){
 		currentIndex.setAttribute('class','');
-		currentIndex.removeChild(currentIndex.getElementsByTagName('div')[0]);
 		nextIndex.setAttribute('class','on');
 		nextIndex.getElementsByClassName('activeLine')[0].style.width = '100px';
 		nextIndex.getElementsByClassName('activeLine')[0].style.left = '50px';
 		leftIndex.innerHTML = '0' + (next);
-	},500);
+	},480);
 }
 /* 오른쪽 인덱스 클릭시 슬라이드 */
 function slidedByIndex(element){
@@ -167,7 +170,7 @@ function loadData(){
 	xhr.open("get", "data/manList.xml", true);
 	xhr.send();
 }
-loadManData();
+loadData();
 
 var person = new Array();
 function listData(xml){
@@ -185,16 +188,13 @@ function listData(xml){
 		console.log(person[i].name, person[i].img);
 		document.querySelector('#tabGrid .maleList')
 	}
-	let name = xmlDoc.getElementsByTagName("person")[0].find('name').innerHTML = name;
 	
 	document.getElementById('hithere').innerHTML = name;
 }
 
-function 
-
 /* 유틸성 함수 */
 /* index 구하기 */
-function getChildNumber(node) {
+function getChildNumber(node){
   return Math.ceil(Array.prototype.indexOf.call(node.parentNode.childNodes, node)/2);
 }
 
