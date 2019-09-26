@@ -157,13 +157,11 @@ function regPerson(name, img){
 }
 
 function loadData(index){
+	document.querySelector('#tabGrid .modelListBox .modelList').innerHTML = '';
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
-			alert('readyState진입 성공');
 			listData(this);
-		}else{
-			alert('실패!');
 		}
 	}
 	switch(index){
@@ -192,22 +190,21 @@ loadData(0);
 
 var person = new Array();
 function listData(xml){
-	alert('listData진입 성공');
 	let i = 0;
 	let name = 0;
 	let img = 0;
+	let dataInsert = 0;
 	const xmlDoc = xml.responseXML;
+	const list = document.querySelector('#tabGrid .modelListBox .modelList');
 	
 	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
-		alert('자료를 넣는 중입니다. ' + i + '번째...');
 		name = xmlDoc.getElementsByTagName("person")[i].getElementsByTagName('name')[0].innerHTML;
 		img = xmlDoc.getElementsByTagName("person")[i].getElementsByTagName('image')[0].innerHTML;
 		person[i] = new regPerson(name, img);
 		console.log(person[i].name, person[i].img);
-		document.querySelector('#tabGrid .maleList')
+		dataInsert = '<li><a href="#">' + person[i].img + '<div><img src="img/arrow-top-right.png" alt="click this model!"/><h3>' + person[i].name + '</h3></div></a></li>';
+		list.div.insertAdjacentHTML( 'beforeend', dataInsert );
 	}
-	
-	document.getElementById('hithere').innerHTML = name;
 }
 
 /* 유틸성 함수 */
