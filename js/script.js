@@ -224,9 +224,8 @@ function listData(xml){
 	let listHeight = modelData.offsetHeight;
 	/* modelData.style.height = (listHeight + 700) + 'px'; */
 	
-	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
-		if(i === 10) break;
-		alert('들어오긴 함.')
+	for (i = 0; i <= xmlDoc.getElementsByTagName('person').length; i++){
+		if(i === 10 || i + currentArray >= xmlDoc.getElementsByTagName('person').length) break;
 		name = xmlDoc.getElementsByTagName("person")[i + currentArray].getElementsByTagName('name')[0].innerHTML;
 		img = xmlDoc.getElementsByTagName("person")[i + currentArray].getElementsByTagName('image')[0].innerHTML;
 		person[i + currentArray] = new regPerson(name, img);
