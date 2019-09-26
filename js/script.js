@@ -225,7 +225,8 @@ function listData(xml){
 	let listHeight = modelData.offsetHeight;
 	modelData.style.height = (listHeight + 500) + 'px';
 	
-	for (i = 0; i != xmlDoc.getElementsByTagName('person').length || i <= 8; i++){
+	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
+		if(i === 7) break;
 		name = xmlDoc.getElementsByTagName("person")[i + currentArray].getElementsByTagName('name')[0].innerHTML;
 		img = xmlDoc.getElementsByTagName("person")[i].getElementsByTagName('image')[0].innerHTML;
 		person[i] = new regPerson(name, img);
