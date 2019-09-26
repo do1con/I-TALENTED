@@ -188,7 +188,7 @@ function loadData(index){
 			return;
 	}
 }
-loadData();
+loadData(0);
 
 var person = new Array();
 function listData(xml){
