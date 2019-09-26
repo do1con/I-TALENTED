@@ -157,7 +157,7 @@ function regPerson(name, img){
 	this.img = img;
 }
 
-function loadData(){
+function loadData(index){
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
@@ -167,8 +167,27 @@ function loadData(){
 			alert('실패!');
 		}
 	}
-	xhr.open("get", "data/manList.xml", true);
-	xhr.send();
+	switch(index){
+		case 0:
+			xhr.open("get", "data/manList.xml", true);
+			xhr.send();
+			return;
+		case 1:
+			xhr.open("get", "data/womanList.xml", true);
+			xhr.send();
+			return;
+		case 2:
+			xhr.open("get", "data/childList.xml", true);
+			xhr.send();
+			return;
+		case 3:
+			xhr.open("get", "data/seniorList.xml", true);
+			xhr.send();
+			return;
+		default:
+			console.log('error! check on function loadData');
+			return;
+	}
 }
 loadData();
 
@@ -182,8 +201,8 @@ function listData(xml){
 	
 	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
 		alert('자료를 넣는 중입니다. ' + i + '번째...');
-		name = xmlDoc.getElementsByTagName("person")[0].getElementsByTagName('name')[0].innerHTML;
-		img = xmlDoc.getElementsByTagName("image")[0].getElementsByTagName('image')[0].innerHTML;
+		name = xmlDoc.getElementsByTagName("person")[i].getElementsByTagName('name')[0].innerHTML;
+		img = xmlDoc.getElementsByTagName("person")[i].getElementsByTagName('image')[0].innerHTML;
 		person[i] = new regPerson(name, img);
 		console.log(person[i].name, person[i].img);
 		document.querySelector('#tabGrid .maleList')
