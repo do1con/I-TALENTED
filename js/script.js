@@ -162,7 +162,6 @@ function regPerson(name, img){
 
 function loadMore(){
 	loadData(currentTab, false);
-	alert('더 불러');
 }
 
 function changeType(element){
@@ -171,7 +170,6 @@ function changeType(element){
 	}else if(currentTab != getChildNumber(element.parentNode) - 1){
 		currentArray = 0;
 		currentTab = getChildNumber(element.parentNode) - 1;
-		document.querySelector('#tabGrid .modelListBox .modelList').style.height = '0px';
 		document.querySelector('#tabGrid .activeLine').style.marginLeft = (500 + ((getChildNumber(element.parentNode) - 1) * 150)) + 'px';
 		loadData(currentTab, true);
 	}
@@ -179,17 +177,10 @@ function changeType(element){
 function loadData(index, firstload){
 	if(firstload){
 		document.querySelector('#tabGrid .modelListBox .modelList').innerHTML = '';
+		/* document.querySelector('#tabGrid .modelListBox .modelList').style.height = '0px'; */
 	}
 	document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
 	var xhr = new XMLHttpRequest();
-	xhr.onreadystatechange = function(){
-		if(this.readyState == 4 && this.status == 200){
-			document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
-			listData(this);
-		}else{
-			document.querySelector('#tabGrid .modelListBox>img').style.display = 'block';
-		}
-	}
 	switch(index){
 		case 0:
 			xhr.open("get", "data/manList.xml", true);
@@ -212,6 +203,14 @@ function loadData(index, firstload){
 			document.querySelector('#tabGrid .modelListBox>img').style.display = 'block';
 			return;
 	}
+	xhr.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status == 200){
+			document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
+			listData(this);
+		}else{
+			document.querySelector('#tabGrid .modelListBox>img').style.display = 'block';
+		}
+	}
 }
 loadData(currentTab);
 
@@ -223,10 +222,11 @@ function listData(xml){
 	const xmlDoc = xml.responseXML;
 	const modelData = document.querySelector('#tabGrid .modelListBox .modelList');
 	let listHeight = modelData.offsetHeight;
-	modelData.style.height = (listHeight + 700) + 'px';
+	/* modelData.style.height = (listHeight + 700) + 'px'; */
 	
 	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
-		if(i === 7) break;
+		if(i === 10) break;
+		alert('들어오긴 함.')
 		name = xmlDoc.getElementsByTagName("person")[i + currentArray].getElementsByTagName('name')[0].innerHTML;
 		img = xmlDoc.getElementsByTagName("person")[i + currentArray].getElementsByTagName('image')[0].innerHTML;
 		person[i + currentArray] = new regPerson(name, img);
