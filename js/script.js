@@ -171,9 +171,9 @@ function changeType(element){
 	}else if(currentTab != getChildNumber(element.parentNode) - 1){
 		currentArray = 0;
 		currentTab = getChildNumber(element.parentNode) - 1;
-		loadData(currentTab, true);
-		document.querySelector('#tabGrid .activeLine').style.marginLeft = (500 + ((getChildNumber(element.parentNode) - 1) * 150)) + 'px';
 		document.querySelector('#tabGrid .modelListBox .modelList').style.height = '0px';
+		document.querySelector('#tabGrid .activeLine').style.marginLeft = (500 + ((getChildNumber(element.parentNode) - 1) * 150)) + 'px';
+		loadData(currentTab, true);
 	}
 }
 function loadData(index, firstload){
