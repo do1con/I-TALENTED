@@ -181,6 +181,14 @@ function loadData(index, firstload){
 	}
 	document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
 	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status == 200){
+			document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
+			listData(this);
+		}else{
+			document.querySelector('#tabGrid .modelListBox>img').style.display = 'block';
+		}
+	}
 	switch(index){
 		case 0:
 			xhr.open("get", "data/manList.xml", true);
@@ -202,14 +210,6 @@ function loadData(index, firstload){
 			console.log('error! check on function loadData');
 			document.querySelector('#tabGrid .modelListBox>img').style.display = 'block';
 			return;
-	}
-	xhr.onreadystatechange = function(){
-		if(this.readyState == 4 && this.status == 200){
-			document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
-			listData(this);
-		}else{
-			document.querySelector('#tabGrid .modelListBox>img').style.display = 'block';
-		}
 	}
 }
 loadData(currentTab, true);
