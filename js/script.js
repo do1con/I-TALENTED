@@ -195,7 +195,7 @@ function listData(xml){
 	let img = 0;
 	let dataInsert = 0;
 	const xmlDoc = xml.responseXML;
-	let list = document.querySelector('#tabGrid .modelListBox .modelList');
+	const modelData = document.querySelector('#tabGrid .modelListBox .modelList');
 	
 	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
 		name = xmlDoc.getElementsByTagName("person")[i].getElementsByTagName('name')[0].innerHTML;
@@ -203,7 +203,7 @@ function listData(xml){
 		person[i] = new regPerson(name, img);
 		console.log(person[i].name, person[i].img);
 		dataInsert = '<li><a href="#">' + person[i].img + '<div><img src="img/arrow-top-right.png" alt="click this model!"/><h3>' + person[i].name + '</h3></div></a></li>';
-		list.insertAdjacentHTML( 'beforeend', dataInsert );
+		modelData.insertAdjacentHTML( 'beforeend', dataInsert );
 	}
 }
 
