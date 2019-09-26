@@ -223,7 +223,7 @@ function listData(xml){
 	const xmlDoc = xml.responseXML;
 	const modelData = document.querySelector('#tabGrid .modelListBox .modelList');
 	let listHeight = modelData.offsetHeight;
-	modelData.style.height = (listHeight + 500) + 'px';
+	modelData.style.height = (listHeight + 700) + 'px';
 	
 	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
 		if(i === 7) break;

@@ -5,7 +5,7 @@
 			Grimes
 		</name>
 		<image>
-			<img src="img/woman_01.jpg" alt="Grimes"/>
+			<img src="img/woman_01.jpg" width="250" alt="Grimes"/>
 		</image>
 	</person>
 	<person>
@@ -13,7 +13,7 @@
 			St.Vincent
 		</name>
 		<image>
-			<img src="img/woman_02.jpg" alt="St.Vincent"/>
+			<img src="img/woman_02.jpg" width="250" alt="St.Vincent"/>
 		</image>
 	</person>
 	<person>
@@ -21,7 +21,7 @@
 			Fiona Apple
 		</name>
 		<image>
-			<img src="img/woman_03.jpeg" alt="Fiona Apple"/>
+			<img src="img/woman_03.jpeg" width="250" alt="Fiona Apple"/>
 		</image>
 	</person>
 	<person>
@@ -29,7 +29,7 @@
 			M.I.A
 		</name>
 		<image>
-			<img src="img/woman_04.png" alt="M.I.A"/>
+			<img src="img/woman_04.png" width="250" width="250" alt="M.I.A"/>
 		</image>
 	</person>
 	<person>
@@ -37,7 +37,7 @@
 			Lorde
 		</name>
 		<image>
-			<img src="img/woman_05.jpg" alt="Lorde"/>
+			<img src="img/woman_05.jpg" width="250" alt="Lorde"/>
 		</image>
 	</person>
 	<person>
@@ -45,7 +45,7 @@
 			SZA
 		</name>
 		<image>
-			<img src="img/woman_06.jpg" alt="SZA"/>
+			<img src="img/woman_06.jpg" width="250" alt="SZA"/>
 		</image>
 	</person>
 	<person>
@@ -53,7 +53,7 @@
 			FKA Twigs
 		</name>
 		<image>
-			<img src="img/woman_07.jpg" alt="FKA Twigs"/>
+			<img src="img/woman_07.jpg" width="250" alt="FKA Twigs"/>
 		</image>
 	</person>
 	<person>
@@ -61,7 +61,7 @@
 			Janelle Monae
 		</name>
 		<image>
-			<img src="img/woman_08.jpg" alt="Janelle Monae"/>
+			<img src="img/woman_08.jpg" width="250" alt="Janelle Monae"/>
 		</image>
 	</person>
 	<person>
@@ -69,7 +69,7 @@
 			Bjork
 		</name>
 		<image>
-			<img src="img/woman_09.jpg" alt="Bjork"/>
+			<img src="img/woman_09.jpg" width="250" alt="Bjork"/>
 		</image>
 	</person>
 	<person>
@@ -77,7 +77,7 @@
 			U.S. Girls
 		</name>
 		<image>
-			<img src="img/woman_10.jpg" alt="U.S. Girls"/>
+			<img src="img/woman_10.jpg" width="250" alt="U.S. Girls"/>
 		</image>
 	</person>
 	<person>
@@ -85,7 +85,7 @@
 			Soccer Mommy
 		</name>
 		<image>
-			<img src="img/woman_11.jpg" alt="Soccer Mommy"/>
+			<img src="img/woman_11.jpg" width="250" alt="Soccer Mommy"/>
 		</image>
 	</person>
 	<person>
@@ -93,7 +93,7 @@
 			Snail Mail
 		</name>
 		<image>
-			<img src="img/woman_12.jpg" alt="Snail Mail"/>
+			<img src="img/woman_12.jpg" width="250" alt="Snail Mail"/>
 		</image>
 	</person>
 	<person>
@@ -101,7 +101,7 @@
 			Sharon Van Etten
 		</name>
 		<image>
-			<img src="img/woman_13.jpg" alt="Sharon Van Etten"/>
+			<img src="img/woman_13.jpg" width="250" alt="Sharon Van Etten"/>
 		</image>
 	</person>
 	<person>
@@ -109,7 +109,7 @@
 			Laura Marling 
 		</name>
 		<image>
-			<img src="img/woman_14.jpg" alt="Laura Marling "/>
+			<img src="img/woman_14.jpg" width="250" alt="Laura Marling "/>
 		</image>
 	</person>
 	<person>
@@ -117,7 +117,7 @@
 			Ariana Grande
 		</name>
 		<image>
-			<img src="img/woman_15.jpg" alt="Ariana Grande"/>
+			<img src="img/woman_15.jpg" width="250" alt="Ariana Grande"/>
 		</image>
 	</person>
 	<person>
@@ -125,7 +125,7 @@
 			Kero Kero Bonito
 		</name>
 		<image>
-			<img src="img/woman_16.jpg" alt="Kero Kero Bonito"/>
+			<img src="img/woman_16.jpg" width="250" alt="Kero Kero Bonito"/>
 		</image>
 	</person>
 	<person>
@@ -133,7 +133,7 @@
 			Kiernan Shipka
 		</name>
 		<image>
-			<img src="img/woman_17.jpg" alt="Kiernan Shipka"/>
+			<img src="img/woman_17.jpg" width="250" alt="Kiernan Shipka"/>
 		</image>
 	</person>
 	<person>
@@ -141,7 +141,7 @@
 			Ellen Page
 		</name>
 		<image>
-			<img src="img/woman_18.jpg" alt="Ellen Page"/>
+			<img src="img/woman_18.jpg" width="250" alt="Ellen Page"/>
 		</image>
 	</person>
 </list>

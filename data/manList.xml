@@ -5,7 +5,7 @@
 			Nicolas Cage
 		</name>
 		<image>
-			<img src="img/man_01.jpg" alt="Nicolas Cage"/>
+			<img src="img/man_01.jpg" width="250"  alt="Nicolas Cage"/>
 		</image>
 	</person>
 	<person>
@@ -13,7 +13,7 @@
 			Kanye West
 		</name>
 		<image>
-			<img src="img/man_02.jpg" alt="Kanye West"/>
+			<img src="img/man_02.jpg" width="250"  alt="Kanye West"/>
 		</image>
 	</person>
 	<person>
@@ -21,7 +21,7 @@
 			Keanu Reeves
 		</name>
 		<image>
-			<img src="img/man_03.jpg" alt="Keanu Reeves"/>
+			<img src="img/man_03.jpg" width="250"  alt="Keanu Reeves"/>
 		</image>
 	</person>
 	<person>
@@ -29,7 +29,7 @@
 			King Krule
 		</name>
 		<image>
-			<img src="img/man_04.jpg" alt="King Krule"/>
+			<img src="img/man_04.jpg" width="250"  alt="King Krule"/>
 		</image>
 	</person>
 	<person>
@@ -37,7 +37,7 @@
 			Kamasi Washington
 		</name>
 		<image>
-			<img src="img/man_05.jpg" alt="Kamasi Washington"/>
+			<img src="img/man_05.jpg" width="250"  alt="Kamasi Washington"/>
 		</image>
 	</person>
 	<person>
@@ -45,7 +45,7 @@
 			Julian Casablancas
 		</name>
 		<image>
-			<img src="img/man_06.jpeg" alt="Julian Casablancas"/>
+			<img src="img/man_06.jpeg" width="250"  alt="Julian Casablancas"/>
 		</image>
 	</person>
 	<person>
@@ -53,7 +53,7 @@
 			Kendrick Lamar
 		</name>
 		<image>
-			<img src="img/man_07.jpg" alt="Kendrick Lamar"/>
+			<img src="img/man_07.jpg" width="250"  alt="Kendrick Lamar"/>
 		</image>
 	</person>
 	<person>
@@ -61,7 +61,7 @@
 			LCD Soundsystem
 		</name>
 		<image>
-			<img src="img/man_08.jpg" alt="LCD Soundsystem"/>
+			<img src="img/man_08.jpg" width="250"  alt="LCD Soundsystem"/>
 		</image>
 	</person>
 	<person>
@@ -69,7 +69,7 @@
 			Frank Ocean
 		</name>
 		<image>
-			<img src="img/man_09.jpg" alt="Frank Ocean"/>
+			<img src="img/man_09.jpg" width="250"  alt="Frank Ocean"/>
 		</image>
 	</person>
 	<person>
@@ -77,7 +77,7 @@
 			Sufjan Stevens
 		</name>
 		<image>
-			<img src="img/man_10.jpg" alt="Sufjan Stevens"/>
+			<img src="img/man_10.jpg" width="250"  alt="Sufjan Stevens"/>
 		</image>
 	</person>
 	<person>
@@ -85,7 +85,7 @@
 			Bon Iver
 		</name>
 		<image>
-			<img src="img/man_11.jpg" alt="Bon Iver"/>
+			<img src="img/man_11.jpg" width="250"  alt="Bon Iver"/>
 		</image>
 	</person>
 	<person>
@@ -93,7 +93,7 @@
 			Perfume Genius
 		</name>
 		<image>
-			<img src="img/man_12.jpg" alt="Perfume Genius"/>
+			<img src="img/man_12.jpg" width="250"  alt="Perfume Genius"/>
 		</image>
 	</person>
 	<person>
@@ -101,7 +101,7 @@
 			Tyler, The Creator
 		</name>
 		<image>
-			<img src="img/man_13.jpg" alt="Tyler, The Creator"/>
+			<img src="img/man_13.jpg" width="250"  alt="Tyler, The Creator"/>
 		</image>
 	</person>
 	<person>
@@ -109,7 +109,7 @@
 			Danny Brown
 		</name>
 		<image>
-			<img src="img/man_14.jpg" alt="Danny Brown"/>
+			<img src="img/man_14.jpg" width="250"  alt="Danny Brown"/>
 		</image>
 	</person>
 	<person>
@@ -117,7 +117,7 @@
 			Morrissey
 		</name>
 		<image>
-			<img src="img/man_15.jpg" alt="Morrissey"/>
+			<img src="img/man_15.jpg" width="250"  alt="Morrissey"/>
 		</image>
 	</person>
 	<person>
@@ -125,7 +125,7 @@
 			Liam Gallagher
 		</name>
 		<image>
-			<img src="img/man_16.jpg" alt="Liam Gallagher"/>
+			<img src="img/man_16.jpg" width="250"  alt="Liam Gallagher"/>
 		</image>
 	</person>
 	<person>
@@ -133,7 +133,7 @@
 			Casey Affleck
 		</name>
 		<image>
-			<img src="img/man_17.png" alt="Casey Affleck"/>
+			<img src="img/man_17.png" width="250"  alt="Casey Affleck"/>
 		</image>
 	</person>
 	<person>
@@ -141,7 +141,7 @@
 			Lucas Hedges
 		</name>
 		<image>
-			<img src="img/man_18.jpg" alt="Lucas Hedges"/>
+			<img src="img/man_18.jpg" width="250"  alt="Lucas Hedges"/>
 		</image>
 	</person>
 </list>
