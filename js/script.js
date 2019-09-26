@@ -203,7 +203,7 @@ function listData(xml){
 		person[i] = new regPerson(name, img);
 		console.log(person[i].name, person[i].img);
 		dataInsert = '<li><a href="#">' + person[i].img + '<div><img src="img/arrow-top-right.png" alt="click this model!"/><h3>' + person[i].name + '</h3></div></a></li>';
-		list.div.insertAdjacentHTML( 'beforeend', dataInsert );
+		list.insertAdjacentHTML( 'beforeend', dataInsert );
 	}
 }
 
