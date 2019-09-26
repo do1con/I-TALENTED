@@ -142,7 +142,7 @@ function adaptAtag(index){
 function styleHeader(){
 	const header = document.querySelector('header');
 	const sct = window.scrollY;
-	if(sct > 200){
+	if(sct > 150){
 		header.style.backgroundColor = 'rgba(255,255,255,0.5)';
 	}else{
 		header.style.backgroundColor = 'rgba(255,255,255,0)';
@@ -228,13 +228,13 @@ function listData(xml){
 	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
 		if(i === 7) break;
 		name = xmlDoc.getElementsByTagName("person")[i + currentArray].getElementsByTagName('name')[0].innerHTML;
-		img = xmlDoc.getElementsByTagName("person")[i].getElementsByTagName('image')[0].innerHTML;
-		person[i] = new regPerson(name, img);
-		console.log(person[i].name, person[i].img);
-		dataInsert = '<li><a href="#">' + person[i].img + '<div><img src="img/arrow-top-right.png" alt="click this model!"/><h3>' + person[i].name + '</h3></div></a></li>';
+		img = xmlDoc.getElementsByTagName("person")[i + currentArray].getElementsByTagName('image')[0].innerHTML;
+		person[i + currentArray] = new regPerson(name, img);
+		console.log(person[i + currentArray].name, person[i + currentArray].img);
+		dataInsert = '<li><a href="#">' + person[i + currentArray].img + '<div><img src="img/arrow-top-right.png" alt="click this model!"/><h3>' + person[i + currentArray].name + '</h3></div></a></li>';
 		modelData.insertAdjacentHTML( 'beforeend', dataInsert );	
 	}
-	currentArray = i;
+	currentArray = i + currentArray;
 	document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
 	console.log(currentArray);
 }
