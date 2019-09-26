@@ -156,12 +156,18 @@ function regPerson(name, img){
 	this.img = img;
 }
 
+let currentTab = 0;
 function loadData(index){
+	if()
 	document.querySelector('#tabGrid .modelListBox .modelList').innerHTML = '';
+	document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
 			listData(this);
+			document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
+		}else{
+			document.querySelector('#tabGrid .modelListBox>img').style.display = 'block';
 		}
 	}
 	switch(index){
@@ -183,12 +189,14 @@ function loadData(index){
 			return;
 		default:
 			console.log('error! check on function loadData');
+			document.querySelector('#tabGrid .modelListBox>img').style.display = 'block';
 			return;
 	}
 }
-loadData(0);
+loadData(currentTab);
 
 var person = new Array();
+let currentArray = 0;
 function listData(xml){
 	let i = 0;
 	let name = 0;
@@ -196,15 +204,19 @@ function listData(xml){
 	let dataInsert = 0;
 	const xmlDoc = xml.responseXML;
 	const modelData = document.querySelector('#tabGrid .modelListBox .modelList');
+	let listHeight = modelData.offsetHeight;
+	modelData.style.height = (listHeight + 500) + 'px';
 	
-	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
-		name = xmlDoc.getElementsByTagName("person")[i].getElementsByTagName('name')[0].innerHTML;
+	for (i = 0; i != xmlDoc.getElementsByTagName('person').length && i <= 8; i++){
+		name = xmlDoc.getElementsByTagName("person")[i + currentArray].getElementsByTagName('name')[0].innerHTML;
 		img = xmlDoc.getElementsByTagName("person")[i].getElementsByTagName('image')[0].innerHTML;
 		person[i] = new regPerson(name, img);
 		console.log(person[i].name, person[i].img);
 		dataInsert = '<li><a href="#">' + person[i].img + '<div><img src="img/arrow-top-right.png" alt="click this model!"/><h3>' + person[i].name + '</h3></div></a></li>';
-		modelData.insertAdjacentHTML( 'beforeend', dataInsert );
+		modelData.insertAdjacentHTML( 'beforeend', dataInsert );	
 	}
+	currentArray = i;
+	document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
 }
 
 /* 유틸성 함수 */
