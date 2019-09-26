@@ -195,7 +195,7 @@ function listData(xml){
 	let img = 0;
 	let dataInsert = 0;
 	const xmlDoc = xml.responseXML;
-	const list = document.querySelector('#tabGrid .modelListBox .modelList');
+	const list = document.querySelector('#tabGrid .modelListBox .modelList')[0];
 	
 	for (i = 0; i != xmlDoc.getElementsByTagName('person').length; i++){
 		name = xmlDoc.getElementsByTagName("person")[i].getElementsByTagName('name')[0].innerHTML;
