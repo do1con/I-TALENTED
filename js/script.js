@@ -1,5 +1,4 @@
 ﻿
-
 /* 메뉴 토글 */
 let menuStatus = false;
 function toggleMenu(){
