@@ -62,7 +62,7 @@ section #mainContent #mainSlide .mainSlide li.active{display: block; opacity: 1;
 #tabGrid .tabMenu li{display: block; float: left; width: 150px; height: 70px;}
 #tabGrid .tabMenu li button{background-color: inherit; border: 0; font-family: Mont; font-size: 0.9em; letter-spacing: 2px; width: 100%; height: 60px; line-height: 60px; color: #343434; cursor: pointer}
 #tabGrid .activeLine{width: 150px; height: 3px; background-color: #000000; margin-left: 500px; transition: margin-left 0.4s;}
-#tabGrid .modelListBox{width: 1250px; height: 700px; margin: 35px auto 0 auto;}
+#tabGrid .modelListBox{width: 1250px; margin: 35px auto 0 auto;}
 #tabGrid .modelListBox>img{display: block; margin: 0 auto; position: relative; left: 50%; margin-left: -181px; top: 0px; clear: both;}
 #tabGrid .modelListBox .modelList{width: 1250px; margin: 0 auto; height: 0px; position: relative; transition: height 0.4s;}
 #tabGrid .modelListBox .modelList li{display: block; width: 250px; height: 300px; float: left; overflow: hidden;}
@@ -73,10 +73,19 @@ section #mainContent #mainSlide .mainSlide li.active{display: block; opacity: 1;
 #tabGrid .modelListBox .modelList li a>div>h3{margin-top: 200px; text-align: center; color: #ffffff; font-size: 1.1em; font-family: Mont;}
 #tabGrid .modelListBox .modelList li a:hover div{opacity: 1;}
 #tabGrid .modelListBox button{clear: both; display: block; width: 200px; height: 50px; margin: 40px auto 0px auto; border: 0; background-color: #222222; color: #ffffff; font-family: Mont; font-size: 0.8em; border-radius: 50px; letter-spacing: 3px; position: relative; top: 40px; cursor: pointer;}
+/* Tab Menu/ model list done */
+
+/* latest news */
+/* title */
+#latestNews{width: 1400px; height: 900px; margin: 100px auto;}
+#latestNews h3{text-align: center; font-family: Open-sans; font-size: 3em; letter-spacing: -1px; color: #212121;}
+#latestNews .latestNewsLine{width: 150px; height: 2px; background-color: #121212; margin: 40px auto;}
+
+/* latest news ends*/
 
 
 /* footer */
-footer{width: 1600px; height: 800px; background-color: red;}
+/* footer{width: 1600px; height: 800px; background-color: red;} */
 
 /**** Tab Menu Ends ****/
 
