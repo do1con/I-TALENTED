@@ -1,6 +1,7 @@
 ﻿body{font-family: Mont, Helvatica, sans-serif; overflow-x: hidden;}
 
 .cf:after{display: block; clear: both; content: '';}
+.fl{float: left;}
 
 /* header */
 header{display: block; width: 100%; position: fixed; top: 0px; left: 0px; z-index: 100; transition: background-color 0.5s; background-color: rgba(255,255,255,0); height: 130px;}
@@ -57,11 +58,11 @@ section #mainContent #mainSlide .mainSlide li.active{display: block; opacity: 1;
 
 /**** Tab Menu Start ****/
 /* Tab Menu */
-#tabGrid{width: 1600px; margin: 60px auto 0;}
+#tabGrid{width: 1400px; margin: 60px auto 0;}
 #tabGrid .tabMenu{display: block; width: 600px; height: 70px; margin: 0 auto;}
 #tabGrid .tabMenu li{display: block; float: left; width: 150px; height: 70px;}
 #tabGrid .tabMenu li button{background-color: inherit; border: 0; font-family: Mont; font-size: 0.9em; letter-spacing: 2px; width: 100%; height: 60px; line-height: 60px; color: #343434; cursor: pointer}
-#tabGrid .activeLine{width: 150px; height: 3px; background-color: #000000; margin-left: 500px; transition: margin-left 0.4s;}
+#tabGrid .activeLine{width: 150px; height: 3px; background-color: #000000; margin-left: 400px; transition: margin-left 0.4s;}
 #tabGrid .modelListBox{width: 1250px; margin: 35px auto 0 auto;}
 #tabGrid .modelListBox>img{display: block; margin: 0 auto; position: relative; left: 50%; margin-left: -181px; top: 0px; clear: both;}
 #tabGrid .modelListBox .modelList{width: 1250px; margin: 0 auto; height: 0px; position: relative; transition: height 0.4s;}
@@ -77,11 +78,38 @@ section #mainContent #mainSlide .mainSlide li.active{display: block; opacity: 1;
 
 /* latest news */
 /* title */
-#latestNews{width: 1400px; height: 900px; margin: 100px auto;}
-#latestNews h3{text-align: center; font-family: Open-sans; font-size: 3em; letter-spacing: -1px; color: #212121;}
+#latestNews{width: 1400px; height: 270px; margin: 100px auto 0px auto;}
+h3{text-align: center; font-family: Open-sans; font-size: 3em; letter-spacing: -1px; color: #212121;}
 #latestNews .latestNewsLine{width: 150px; height: 2px; background-color: #121212; margin: 40px auto;}
 
+/* adBanner */
+#latestNews .adBanner{width: 1400px; height: 130px;}
+#latestNews .adBanner>li{width: 440px; height: 130px; float: left; overflow: hidden; margin-left: 40px; transition: box-shadow 0.4s;}
+#latestNews .adBanner>li:hover{
+	-moz-box-shadow: 0px 10px 10px -10px gray;
+	-webkit-box-shadow: 0px 10px 10px -10px gray;
+	-o-box-shadow: 0px 10px 10px -10px gray;
+	-ms-box-shadow: 0px 10px 10px -10px gray;
+	box-shadow: 0px 10px 10px -10px gray;
+	}
+#latestNews .adBanner>li:first-child{margin-left: 0px;}
+#latestNews .adBanner>li>a{display: block; width: 466px; height: 130px; position: relative;}
+#latestNews .adBanner>li>a>img{position: absolute; left: 0; top: 0;}
+#latestNews .adBanner>li>a>p{position: absolute; left: 210px; top: 0px; color: #212121; font-family: Open-sans; font-size: 1.4em; line-height: 1.3em; transition: color 0.4s;}
+span.date{color: #545454; font-family: Open-sans; font-size: 0.8em; position: absolute; bottom: 10px; left: 210px;}
+#latestNews .adBanner>li>a:hover>p{color: #88bbbc;}
 /* latest news ends*/
+/* gridsection */
+.gridSection{width: 1400px; height: 700px; margin: 30px auto;}
+.gridSection .leftSection{width: 920px; height: 700px;}
+	.leftSection .leftTopSec{width: 920px; height: 400px; background-color: #000000;}
+		.leftSection .leftTopSec video{width: 920px; height: 400px;}
+	.leftSection .leftBotSec{width: 920px; height: 260px; margin-top: 40px;}
+	.leftBotSec .bottomBanner{width: 440px; height: 260px; background-color: red;}
+	.leftBotSec .modelIntroduce{width: 440px; height: 260px; background-color: red; margin-left: 40px;}
+.gridSection .rightSection{width: 440px; height: 700px; background-color: blue; margin-left: 40px;}
+
+/* gridsection ends*/
 
 
 /* footer */
