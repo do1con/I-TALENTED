@@ -220,6 +220,7 @@ function listData(xml){
 	let img = 0;
 	let dataInsert = 0;
 	let xmlDoc = xml.responseXML;
+	alert(xmlDoc);
 	const modelData = document.querySelector('#tabGrid .modelListBox .modelList');
 	let listHeight = modelData.offsetHeight;
 	/* modelData.style.height = (listHeight + 700) + 'px'; */
