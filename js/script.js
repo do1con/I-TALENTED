@@ -211,12 +211,12 @@ function loadData(index, firstload){
 }
 loadData(currentTab, true);
 
-function listData(xml){
+function listData(paramm){
 	let i = 0;
 	let name = 0;
 	let img = 0;
 	let dataInsert = 0;
-	let xmlDoc = xml.responseXML;
+	let xmlDoc = paramm.responseXML;
 	alert(xmlDoc);
 	const modelData = document.querySelector('#tabGrid .modelListBox .modelList');
 	let listHeight = modelData.offsetHeight;
