@@ -2,146 +2,146 @@
 <list>
 	<person>
 		<name>
-			Grimes
+			Nicolas Cage
 		</name>
 		<image>
-			<img src="img/woman_01.jpg" width="250" alt="Grimes"/>
+			<img src="img/man_01.jpg" width="250" alt="Nicolas Cage"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			St.Vincent
+			Kanye West
 		</name>
 		<image>
-			<img src="img/woman_02.jpg" width="250" alt="St.Vincent"/>
+			<img src="img/man_02.jpg" width="250" alt="Kanye West"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Fiona Apple
+			Keanu Reeves
 		</name>
 		<image>
-			<img src="img/woman_03.jpeg" width="250" alt="Fiona Apple"/>
+			<img src="img/man_03.jpg" width="250" alt="Keanu Reeves"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			M.I.A
+			King Krule
 		</name>
 		<image>
-			<img src="img/woman_04.png" width="250" width="250" alt="M.I.A"/>
+			<img src="img/man_04.jpg" width="250" alt="King Krule"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Lorde
+			Kamasi Washington
 		</name>
 		<image>
-			<img src="img/woman_05.jpg" width="250" alt="Lorde"/>
+			<img src="img/man_05.jpg" width="250" alt="Kamasi Washington"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			SZA
+			Julian Casablancas
 		</name>
 		<image>
-			<img src="img/woman_06.jpg" width="250" alt="SZA"/>
+			<img src="img/man_06.jpeg" width="250" alt="Julian Casablancas"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			FKA Twigs
+			Kendrick Lamar
 		</name>
 		<image>
-			<img src="img/woman_07.jpg" width="250" alt="FKA Twigs"/>
+			<img src="img/man_07.jpg" width="250" alt="Kendrick Lamar"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Janelle Monae
+			LCD Soundsystem
 		</name>
 		<image>
-			<img src="img/woman_08.jpg" width="250" alt="Janelle Monae"/>
+			<img src="img/man_08.jpg" width="250" alt="LCD Soundsystem"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Bjork
+			Frank Ocean
 		</name>
 		<image>
-			<img src="img/woman_09.jpg" width="250" alt="Bjork"/>
+			<img src="img/man_09.jpg" width="250" alt="Frank Ocean"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			U.S. Girls
+			Sufjan Stevens
 		</name>
 		<image>
-			<img src="img/woman_10.jpg" width="250" alt="U.S. Girls"/>
+			<img src="img/man_10.jpg" width="250" alt="Sufjan Stevens"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Soccer Mommy
+			Bon Iver
 		</name>
 		<image>
-			<img src="img/woman_11.jpg" width="250" alt="Soccer Mommy"/>
+			<img src="img/man_11.jpg" width="250" alt="Bon Iver"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Snail Mail
+			Perfume Genius
 		</name>
 		<image>
-			<img src="img/woman_12.jpg" width="250" alt="Snail Mail"/>
+			<img src="img/man_12.jpg" width="250" alt="Perfume Genius"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Sharon Van Etten
+			Tyler, The Creator
 		</name>
 		<image>
-			<img src="img/woman_13.jpg" width="250" alt="Sharon Van Etten"/>
+			<img src="img/man_13.jpg" width="250" alt="Tyler, The Creator"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Laura Marling 
+			Danny Brown
 		</name>
 		<image>
-			<img src="img/woman_14.jpg" width="250" alt="Laura Marling "/>
+			<img src="img/man_14.jpg" width="250" alt="Danny Brown"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Ariana Grande
+			Morrissey
 		</name>
 		<image>
-			<img src="img/woman_15.jpg" width="250" alt="Ariana Grande"/>
+			<img src="img/man_15.jpg" width="250" alt="Morrissey"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Kero Kero Bonito
+			Liam Gallagher
 		</name>
 		<image>
-			<img src="img/woman_16.jpg" width="250" alt="Kero Kero Bonito"/>
+			<img src="img/man_16.jpg" width="250" alt="Liam Gallagher"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Kiernan Shipka
+			Casey Affleck
 		</name>
 		<image>
-			<img src="img/woman_17.jpg" width="250" alt="Kiernan Shipka"/>
+			<img src="img/man_17.png" width="250" alt="Casey Affleck"/>
 		</image>
 	</person>
 	<person>
 		<name>
-			Ellen Page
+			Lucas Hedges
 		</name>
 		<image>
-			<img src="img/woman_18.jpg" width="250" alt="Ellen Page"/>
+			<img src="img/man_18.jpg" width="250" alt="Lucas Hedges"/>
 		</image>
 	</person>
 </list>
