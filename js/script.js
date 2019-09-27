@@ -174,7 +174,7 @@ function changeType(element){
 		loadData(currentTab, true);
 	}
 }
-var xhr[3];
+var xhr = new Array();
 function loadData(index, firstload){
 	if(firstload){
 		document.querySelector('#tabGrid .modelListBox .modelList').innerHTML = '';
