@@ -191,19 +191,19 @@ function loadData(index, firstload){
 	}
 	switch(index){
 		case 0:
-			xhr.open("get", "I-TALENTED/data/manList.xml", true);
+			xhr.open("get", "/I-TALENTED/data/manList.xml", true);
 			xhr.send();
 			return;
 		case 1:
-			xhr.open("get", "I-TALENTED/data/womanList.xml", true);
+			xhr.open("get", "/I-TALENTED/data/womanList.xml", true);
 			xhr.send();
 			return;
 		case 2:
-			xhr.open("get", "I-TALENTED/data/childList.xml", true);
+			xhr.open("get", "/I-TALENTED/data/childList.xml", true);
 			xhr.send();
 			return;
 		case 3:
-			xhr.open("get", "I-TALENTED/data/seniorList.xml", true);
+			xhr.open("get", "/I-TALENTED/data/seniorList.xml", true);
 			xhr.send();
 			return;
 		default:
