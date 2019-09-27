@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding='utf-8'?>
+<list>
+	<person>
+		<name>
+			Adrienne Juliger
+		</name>
+		<image>
+			<img src="img/teen_01.jpg" width="250" alt="Adrienne Juliger"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Ajier Manassah
+		</name>
+		<image>
+			<img src="img/teen_02.jpg" width="250" alt="Ajier Manassah"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Aleyna Fitzgerald
+		</name>
+		<image>
+			<img src="img/teen_03.jpg" width="250" alt="Aleyna Fitzgerald"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Kit Warrington
+		</name>
+		<image>
+			<img src="img/teen_04.png" width="250" alt="Kit Warrington"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Neels Visser
+		</name>
+		<image>
+			<img src="img/teen_05.jpg" width="250" alt="Neels Visser"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Vivien Lawson
+		</name>
+		<image>
+			<img src="img/teen_06.jpg" width="250" alt="Vivien Lawson"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Anine Van Velzen
+		</name>
+		<image>
+			<img src="img/teen_07.jpg" width="250" alt="Anine Van Velzen"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Anja Rubik
+		</name>
+		<image>
+			<img src="img/teen_08.jpg" width="250" alt="Anja Rubik"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Ayaana Aschkar Stevens
+		</name>
+		<image>
+			<img src="img/teen_09.jpg" width="250" alt="Ayaana Aschkar Stevens"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Yohanis
+		</name>
+		<image>
+			<img src="img/teen_10.jpg" width="250" alt="Yohanis"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Dilone
+		</name>
+		<image>
+			<img src="img/teen_11.jpg" width="250" alt="Dilone"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Elisabeth Lucasse
+		</name>
+		<image>
+			<img src="img/teen_12.jpg" width="250" alt="Elisabeth Lucasse"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Emma Boyd
+		</name>
+		<image>
+			<img src="img/teen_13.jpg" width="250" alt="Emma Boyd"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Fernanda
+		</name>
+		<image>
+			<img src="img/teen_14.jpg" width="250" alt="Fernanda"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Izzy Wild
+		</name>
+		<image>
+			<img src="img/teen_15.jpg" width="250" alt="Izzy Wild"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Laura Azevedo
+		</name>
+		<image>
+			<img src="img/teen_16.jpg" width="250" alt="Laura Azevedo"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Jude Cooper
+		</name>
+		<image>
+			<img src="img/teen_17.jpg" width="250" alt="Jude Cooper"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Markel Williams
+		</name>
+		<image>
+			<img src="img/teen_18.jpg" width="250" alt="Markel Williams"/>
+		</image>
+	</person>
+</list>
