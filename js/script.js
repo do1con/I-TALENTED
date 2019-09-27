@@ -191,19 +191,19 @@ function loadData(index, firstload){
 	}
 	switch(index){
 		case 0:
-			xhr.open("get", "/data/manList.xml", true);
+			xhr.open("get", "I-TALENTED/data/manList.xml", true);
 			xhr.send();
 			return;
 		case 1:
-			xhr.open("get", "/data/womanList.xml", true);
+			xhr.open("get", "I-TALENTED/data/womanList.xml", true);
 			xhr.send();
 			return;
 		case 2:
-			xhr.open("get", "/data/childList.xml", true);
+			xhr.open("get", "I-TALENTED/data/childList.xml", true);
 			xhr.send();
 			return;
 		case 3:
-			xhr.open("get", "/data/seniorList.xml", true);
+			xhr.open("get", "I-TALENTED/data/seniorList.xml", true);
 			xhr.send();
 			return;
 		default:
@@ -211,7 +211,6 @@ function loadData(index, firstload){
 			document.querySelector('#tabGrid .modelListBox>img').style.display = 'block';
 			return;
 	}
-	xhr.send();
 }
 loadData(currentTab, true);
 
