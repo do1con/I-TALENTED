@@ -174,41 +174,42 @@ function changeType(element){
 		loadData(currentTab, true);
 	}
 }
+var xhr[3];
 function loadData(index, firstload){
 	if(firstload){
 		document.querySelector('#tabGrid .modelListBox .modelList').innerHTML = '';
 		/* document.querySelector('#tabGrid .modelListBox .modelList').style.height = '0px'; */
 	}
 	document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
-	var xhr = new XMLHttpRequest();
-	xhr.onreadystatechange = function(){
+	xhr[index] = new XMLHttpRequest();
+	xhr[index].onreadystatechange = function(){
 		if(this.readyState == 4 && this.status == 200){
 			document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
-			listData(this);
+			listData(xhr[index]);
 		}else{
 			document.querySelector('#tabGrid .modelListBox>img').style.display = 'block';
 		}
 	}
 	switch(index){
 		case 0:
-			xhr.open("get", "/I-TALENTED/data/manList.xml", true);
-			xhr.send();
-			alert(xhr);
+			xhr[index].open("get", "/I-TALENTED/data/manList.xml", true);
+			xhr[index].send();
+			alert(xhr[index]);
 			return;
 		case 1:
-			xhr.open("get", "/I-TALENTED/data/womanList.xml", true);
-			xhr.send();
-			alert(xhr);
+			xhr[index].open("get", "/I-TALENTED/data/womanList.xml", true);
+			xhr[index].send();
+			alert(xhr[index]);
 			return;
 		case 2:
-			xhr.open("get", "/I-TALENTED/data/childList.xml", true);
-			xhr.send();
-			alert(xhr);
+			xhr[index].open("get", "/I-TALENTED/data/childList.xml", true);
+			xhr[index].send();
+			alert(xhr[index]);
 			return;
 		case 3:
-			xhr.open("get", "/I-TALENTED/data/seniorList.xml", true);
-			xhr.send();
-			alert(xhr);
+			xhr[index].open("get", "/I-TALENTED/data/seniorList.xml", true);
+			xhr[index].send();
+			alert(xhr[index]);
 			return;
 		default:
 			console.log('error! check on function loadData');
