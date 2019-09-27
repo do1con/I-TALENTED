@@ -219,7 +219,7 @@ function listData(xml){
 	let name = 0;
 	let img = 0;
 	let dataInsert = 0;
-	const xmlDoc = xml.responseXML;
+	let xmlDoc = xml.responseXML;
 	const modelData = document.querySelector('#tabGrid .modelListBox .modelList');
 	let listHeight = modelData.offsetHeight;
 	/* modelData.style.height = (listHeight + 700) + 'px'; */
