@@ -194,22 +194,18 @@ function loadData(index, firstload){
 		case 0:
 			xhr[index].open("get", "/I-TALENTED/data/manList.xml", true);
 			xhr[index].send();
-			alert(xhr[index]);
 			return;
 		case 1:
 			xhr[index].open("get", "/I-TALENTED/data/womanList.xml", true);
 			xhr[index].send();
-			alert(xhr[index]);
 			return;
 		case 2:
-			xhr[index].open("get", "/I-TALENTED/data/childList.xml", true);
+			xhr[index].open("get", "/I-TALENTED/data/teenList.xml", true);
 			xhr[index].send();
-			alert(xhr[index]);
 			return;
 		case 3:
 			xhr[index].open("get", "/I-TALENTED/data/seniorList.xml", true);
 			xhr[index].send();
-			alert(xhr[index]);
 			return;
 		default:
 			console.log('error! check on function loadData');
@@ -225,8 +221,6 @@ function listData(paramm){
 	let img = 0;
 	let dataInsert = 0;
 	let xmlDoc = paramm.responseXML;
-	alert(paramm);
-	alert(xmlDoc);
 	const modelData = document.querySelector('#tabGrid .modelListBox .modelList');
 	let listHeight = modelData.offsetHeight;
 	/* modelData.style.height = (listHeight + 700) + 'px'; */
