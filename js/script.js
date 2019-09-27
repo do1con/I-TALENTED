@@ -224,6 +224,7 @@ function listData(paramm){
 	let img = 0;
 	let dataInsert = 0;
 	let xmlDoc = paramm.responseXML;
+	alert(paramm);
 	alert(xmlDoc);
 	const modelData = document.querySelector('#tabGrid .modelListBox .modelList');
 	let listHeight = modelData.offsetHeight;
