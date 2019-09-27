@@ -193,18 +193,22 @@ function loadData(index, firstload){
 		case 0:
 			xhr.open("get", "/I-TALENTED/data/manList.xml", true);
 			xhr.send();
+			alert(xhr);
 			return;
 		case 1:
 			xhr.open("get", "/I-TALENTED/data/womanList.xml", true);
 			xhr.send();
+			alert(xhr);
 			return;
 		case 2:
 			xhr.open("get", "/I-TALENTED/data/childList.xml", true);
 			xhr.send();
+			alert(xhr);
 			return;
 		case 3:
 			xhr.open("get", "/I-TALENTED/data/seniorList.xml", true);
 			xhr.send();
+			alert(xhr);
 			return;
 		default:
 			console.log('error! check on function loadData');
