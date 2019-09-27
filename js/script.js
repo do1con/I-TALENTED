@@ -151,7 +151,7 @@ function styleHeader(){
 
 /* 탭 그리드 메뉴 */
 /* XML 파일 가져오기 */
-let currentTab = 0;
+let currentTab = 1;
 var person = new Array();
 let currentArray = 0;
 
@@ -183,7 +183,7 @@ function loadData(index, firstload){
 	document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
 	xhr[index] = new XMLHttpRequest();
 	xhr[index].onreadystatechange = function(){
-		if(this.readyState == 4 && this.status == 200){
+		if(xhr[index].readyState == 4 && xhr[index].status == 200){
 			document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
 			listData(xhr[index]);
 		}else{
