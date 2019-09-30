@@ -1,10 +1,9 @@
 # I-TALENTED
-JavaScript, HTML5, CSS3
+A Project for practicing pure Javascript.
+Only Used HTML5, CSS3, Javascript (few xml)
+referred a free web taplate created by Designer.
+comments may be written in Korean.
 ------------------------
-### Project to practice JavaScript
-#### A website for fictional model agency
-##### Tooltips and comments may be written in Korean.
-##### Created by referring to a free web template created by the designer.
-### Web template image referenced below
->![Alt text](/img/MITALENT_HomePage.jpg)
+preview below
+>![Alt text](/preview.png)
 >source : https://freebiesbug.com/psd-freebies/mi-talent/
