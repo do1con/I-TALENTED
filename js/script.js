@@ -223,7 +223,6 @@ function listData(paramm){
 	let xmlDoc = paramm.responseXML;
 	const modelData = document.querySelector('#tabGrid .modelListBox .modelList');
 	let listHeight = modelData.offsetHeight;
-	/* modelData.style.height = (listHeight + 700) + 'px'; */
 	
 	for (i = 0; i <= xmlDoc.getElementsByTagName('person').length; i++){
 		if(i === 10 || i + currentArray >= xmlDoc.getElementsByTagName('person').length) break;
@@ -238,6 +237,43 @@ function listData(paramm){
 	document.querySelector('#tabGrid .modelListBox>img').style.display = 'none';
 	console.log(currentArray);
 }
+
+/* 하단 슬라이드 배너 */
+let currentBanner = 1;
+function slideModelBanner(next){
+	let prevBanner = document.querySelector('.modelIntroduce .introduceSlide>li.active');
+	let nextBanner = document.querySelectorAll('.modelIntroduce .introduceSlide>li')[next-1
+	];
+	prevBanner.setAttribute('class','');
+	nextBanner.setAttribute('class','active');
+	slideModelIndexing(next);
+	currentBanner = next;
+}
+
+/* 하단슬라이드 인덱스 */
+function slideModelIndexing(next){
+	let currentIndex = document.querySelector('.modelIntroduce .slideNav .on');
+	let nextIndex = document.querySelector('.modelIntroduce .slideNav').getElementsByTagName('li')[next-1];
+	currentIndex.setAttribute('class', '');
+	nextIndex.setAttribute('class', 'on');
+}
+/* 하단슬라이드 인덱스 클릭 시 슬라이드 */
+function clickBottomIndex(element){
+	let nextIndex = getChildNumber(element);
+	clearInterval(autoSlideBottom);
+	slideModelBanner(nextIndex);
+	autoModelSlide();
+}
+/* 하단슬라이드 자동 진행 */
+let autoSlideBottom = 0;
+function autoModelSlide(){
+	autoSlideBottom = setInterval(function(){
+		++currentBanner;
+		if(currentBanner > 4) currentBanner = 1;
+		slideModelBanner(currentBanner);
+	},2000);
+}
+autoModelSlide();
 
 /* 유틸성 함수 */
 /* index 구하기 */

@@ -1,4 +1,5 @@
-﻿body{font-family: Mont, Helvatica, sans-serif; overflow-x: hidden;}
+﻿body{font-family: Mont, Helvatica, sans-serif;}
+button, a{border: 0px;}
 
 .cf:after{display: block; clear: both; content: '';}
 .fl{float: left;}
@@ -24,7 +25,7 @@ header nav ul#menu li a:hover{color: #ffffff;  background-color: rgba(10,10,10,0
 
 /* section */
 section{width: 100%;}
-section #mainContent{width: 1600px; height: 700px; margin: 100px auto 0px; position: relative;}
+section #mainContent{width: 1600px; height: 700px; margin: 100px auto 0px; position: relative; overflow: hidden;}
 section #mainContent .box1_1{width: 100%; height: 100%; position: absolute; background-color: #c4dcdc; top: -45%; right: -70%; z-index: 1;}
 /* lnb */
 #mainContent .lnb {width: 165px; position: absolute; top: 70px; z-index: 3;}
@@ -35,7 +36,7 @@ section #mainContent .box1_1{width: 100%; height: 100%; position: absolute; back
 #mainContent .snsLine{width: 3px; height: 100px; background-color: #1a191e; position: absolute; top: 320px; left: 80px;}
 #mainContent span.leftSlideIndex{display: block; position: absolute; transform: rotate(-90deg); top: 450px; left: 65px; font-family: Open-sans; font-size: 2em;}
 /* main slide */
-section #mainContent #mainSlide{width: 100%; height: 100%; position: absolute; z-index: 2; position: relative;}
+section #mainContent #mainSlide{width: 100%; height: 100%; position: absolute; z-index: 2; position: relative;   overflow: hidden;}
 section #mainContent #mainSlide a{display: block; width: 250px; height: 80px; background-color: #b5d3d3; bottom: 0px; left: 50px; position: absolute; color: #ffffff; text-align: center; line-height: 80px; font-family: Mont; font-size: 0.9em; letter-spacing: 1px; transition: background-color 0.5s;}
 section #mainContent #mainSlide .slideToggle{display: block; width: 80px; height: 80px; background-color: #b5d3d3; bottom: 0px; left: 300px; position: absolute; background: url(../img/pause-button.png) no-repeat center center; background-size: 50px; background-color: #ffffff; border: 0px; z-index: 9; cursor: pointer;}
 section #mainContent #mainSlide .lineForDesign{width: 190px; height: 4px; background-color: #ffffff; position: absolute; left: 540px; top: 460px;}
@@ -100,18 +101,30 @@ span.date{color: #545454; font-family: Open-sans; font-size: 0.8em; position: ab
 #latestNews .adBanner>li>a:hover>p{color: #88bbbc;}
 /* latest news ends*/
 /* gridsection */
-.gridSection{width: 1400px; height: 700px; margin: 30px auto;}
-.gridSection .leftSection{width: 920px; height: 700px;}
+.gridSection{width: 1400px; height: 800px; margin: 30px auto;}
+.gridSection .leftSection{width: 920px; height: 800px;}
 	.leftSection .leftTopSec{width: 920px; height: 400px; background-color: #000000;}
 		.leftSection .leftTopSec video{width: 920px; height: 400px;}
-	.leftSection .leftBotSec{width: 920px; height: 260px; margin-top: 40px;}
-	.leftBotSec .bottomBanner{width: 440px; height: 260px; background-color: red;}
-	.leftBotSec .modelIntroduce{width: 440px; height: 260px; background-color: red; margin-left: 40px;}
-.gridSection .rightSection{width: 440px; height: 700px; background-color: blue; margin-left: 40px;}
+	.leftSection .leftBotSec{width: 920px; height: 360px; margin-top: 40px;}
+	.leftBotSec .bottomBanner{width: 440px; height: 360px; position: relative;}
+		.bottomBanner h3{font-family: Open-sans; font-size: 1.7em; text-align: left; letter-spacing: 1px;}
+		.bottomBanner span.date{left: 10px;}
+	.leftBotSec .modelIntroduce{width: 440px; height: 360px; margin-left: 40px; position: relative;}
+	.leftBotSec .modelIntroduce .introduceSlide{display: block; width: 440px; height: 360px; overflow: hidden; position: relative;}
+	.leftBotSec .modelIntroduce .introduceSlide li{width: 440px; height: 360px; position: absolute; left: 0px; top: 0%; transition: opacity 0.4s; opacity: 0;}
+	.leftBotSec .modelIntroduce .introduceSlide li h4{position: absolute; color: #212121; text-decoration: none; font-family: Open-sans; font-size: 1.7em; color: #ffffff; bottom: 0px; left: 0px; background-color: rgba(10,10,10,0.7); padding:10px; letter-spacing: 0.5px; display: block; width: 100%; text-align: left;}
+	.leftBotSec .modelIntroduce .introduceSlide li.active{display: block; opacity: 1;}
+	.leftBotSec .modelIntroduce .slideNav{display: block; width: 25px; height: 150px; position: absolute;  top: 50%; right: 10px; margin-top: -75px;}
+	.leftBotSec .modelIntroduce .slideNav li{display: block;  width: 25px; height: 25px; margin-top: 5px;}
+	.leftBotSec .modelIntroduce .slideNav li:first-child{margin-top: 0px;}
+	.leftBotSec .modelIntroduce .slideNav li button{width: 25px; height: 25px; background-color: rgba(255,255,255,0.5); border: 0px; border-radius: 50%; transform: scale(0.5); transition: background-color, transform 0.5s; cursor: pointer;}
+	.leftBotSec .modelIntroduce .slideNav li.on button{background-color: rgba(255,255,255,0.85); transform: scale(1);}
+.gridSection .rightSection{width: 440px; height: 800px; margin-left: 40px;}
+.gridSection .rightSection a{display: block; width: 100%; height: 800px; position: relative;}
+.gridSection .rightSection a h3{text-align: left; font-size: 2.3em; letter-spacing: 1px;}
+.gridSection .rightSection a .date{left: 10px; bottom: 0px;}
 
 /* gridsection ends*/
-
-
 /* footer */
 /* footer{width: 1600px; height: 800px; background-color: red;} */
 
