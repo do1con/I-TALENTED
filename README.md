@@ -7,5 +7,5 @@
 </ul>
 
 preview :
-><img src="preview.png">
+><img src="/I-TALENTED/preview.png">
 >web template source : https://freebiesbug.com/psd-freebies/mi-talent/
