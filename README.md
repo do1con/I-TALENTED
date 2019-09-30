@@ -5,5 +5,5 @@ referred a free web taplate created by Designer.
 comments may be written in Korean.
 ------------------------
 preview below
->![Alt text](/preview.png)
+>![Alt text](preview.png)
 >source : https://freebiesbug.com/psd-freebies/mi-talent/
