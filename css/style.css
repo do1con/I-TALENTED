@@ -12,7 +12,7 @@ header .headerWrap>ul>li{float: left; margin-left: 60px;}
 header .headerWrap>ul>li a{display: block; padding: 10px 20px; color: #1a1a1c; letter-spacing: 8px;}
 header .headerWrap>ul>li.title{margin-left: 150px;}
 header .headerWrap>ul>li.title h1{text-align: center; letter-spacing: 3px; font-family: Abril; font-size: 3em; margin-top: -20px;}
-header .headerWrap>ul>li.searchArea{float: right;}
+header .headerWrap>ul>li.searchArea{float: right; width: 30%;}
 header .headerWrap>ul>li.searchArea input#search{background-color: inherit; border: 0; box-sizing:border-box; margin-right: 20px; height: 33px; width: 0px; width: 250px; border-bottom: 2px solid rgba(70,70,70,0); transition: all 0.5s;}
 header .headerWrap>ul>li.searchArea input.searchBtn{width: 50px; height: 50px; background: url(../img/search.png) no-repeat left top; background-size: contain; border: 0; margin-top: -20px; cursor: pointer;}
 
@@ -138,6 +138,46 @@ footer ul.footerSns{float: right; display: block; width: 120px; margin-top: 20px
 footer ul.footerSns li{float: left; display: block; width: 20px; height: 20px; margin-left: 10px;}
 
 /**** Tab Menu Ends ****/
+
+/* 반응형  */
+/* 1600px 아래 */
+@media (min-width:1280px) and (max-width:1600px){
+	body{width: 100%;}
+	header{width: 100%;}
+	header .headerWrap{width: 100%;}
+	.headerWrap>ul{width: 100%; position: relative;}
+	header>.headerWrap>ul>li{margin-left: 20px;}
+	header>.headerWrap>ul>li:first-child{margin-left: 5%;}
+	header>.headerWrap>ul>li.title{position: absolute; left: 50%; margin-left: -200px;}
+	header>.headerWrap>ul>li.searchArea{float: right;}
+	header .headerWrap>ul>li.searchArea input#search{width: 70%;}
+	section>#mainContent{transform: scale(0.7); margin: 100px auto; width: 100%;}
+}
+/* 태블릿 */
+@media (min-width:1025px) and (max-width:1280px){
+	body{width: 100%; overflow: hidden;}
+	header{width: 100%;}
+	header .headerWrap{width: 100%;}
+	.headerWrap>ul{width: 100%;}
+	header>.headerWrap>ul>li{margin-left: 20px;}
+	header>.headerWrap>ul>li:first-child{margin-left: 5%;}
+	header>.headerWrap>ul>li.title{margin-left: 5%;}
+	header>.headerWrap>ul>li.searchArea{float: left;}
+
+	
+}
+/* 태블릿 (아이패드등 가로)*/
+@media (min-width:768px) and (max-width:1024px){
+	header{width: 100%;}
+}
+/* 저해상도 태블릿 */
+@media (min-width:768px) and (max-width:1024px) and (orientation: landscape){
+	header{width: 100%;}
+}
+/* 대부분의 스마트폰 모바일 세로 */
+@media (min-width:481px) and (max-width:767px){
+	header{width: 100%;}
+}
 
 /* define fonts */
 @font-face{
