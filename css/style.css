@@ -48,7 +48,7 @@ section #mainContent #mainSlide .mainSlide li img{position: absolute; bottom: 0;
 section #mainContent #mainSlide .mainSlide li:first-child img{right: 10px;}
 section #mainContent #mainSlide .mainSlide li.active{display: block; opacity: 1;}
 /* main slide navigator */
-#mainSlide .slideNav{width: 400px; height: 300px; position: absolute; top: 450px; right: -150px;}
+#mainSlide .slideNav{width: 400px; height: 250px; position: absolute; top: 450px; right: -150px;}
 #mainSlide .slideNav ul li{margin-top: 40px; position: relative;}
 #mainSlide .slideNav ul li button{background-color: inherit; border: 0; font-family: Mont; font-size: 1em; letter-spacing: 4px; color: #a7a6aa; cursor: pointer;}
 #mainSlide .slideNav ul li.on button{color: #232323;}
@@ -121,12 +121,21 @@ span.date{color: #545454; font-family: Open-sans; font-size: 0.8em; position: ab
 	.leftBotSec .modelIntroduce .slideNav li.on button{background-color: rgba(255,255,255,0.85); transform: scale(1);}
 .gridSection .rightSection{width: 440px; height: 800px; margin-left: 40px;}
 .gridSection .rightSection a{display: block; width: 100%; height: 800px; position: relative;}
-.gridSection .rightSection a h3{text-align: left; font-size: 2.3em; letter-spacing: 1px;}
+.gridSection .rightSection a h3{float: left; text-align: left; font-size: 2.3em; letter-spacing: 1px;}
 .gridSection .rightSection a .date{left: 10px; bottom: 0px;}
 
 /* gridsection ends*/
 /* footer */
-/* footer{width: 1600px; height: 800px; background-color: red;} */
+footer{width: 1400px; height: 200px; margin: 50px auto 0px auto; }
+footer ul:first-child{border-bottom: 1px solid #545454; padding-bottom: 20px;}
+footer ul:first-child li:nth-child(1){float: left;}
+footer ul:first-child li:nth-child(1) h2{font-family: Abril; font-size: 2.5em; color: #212121; letter-spacing: 8px;}
+footer ul:first-child li:nth-child(2){float: right;}
+footer ul:first-child li:nth-child(2) h3{font-size: 1.2em; position: relative; bottom: -30px; float: left; padding-left: 30px;}
+footer ul:first-child li:nth-child(2) a{display: block; float: left; position: relative; bottom: -25px; padding-left: 30px;}
+footer span.copyright{color: #545454; font-size: 0.8em; font-family: Open-sans; margin-top: 20px; display: block;}
+footer ul.footerSns{float: right; display: block; width: 120px; margin-top: 20px;}
+footer ul.footerSns li{float: left; display: block; width: 20px; height: 20px; margin-left: 10px;}
 
 /**** Tab Menu Ends ****/
 

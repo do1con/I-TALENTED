@@ -143,7 +143,7 @@ function styleHeader(){
 	const header = document.querySelector('header');
 	const sct = window.scrollY;
 	if(sct > 150){
-		header.style.backgroundColor = 'rgba(255,255,255,0.5)';
+		header.style.backgroundColor = 'rgba(255,255,255,0.8)';
 	}else{
 		header.style.backgroundColor = 'rgba(255,255,255,0)';
 	}
