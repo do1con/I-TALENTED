@@ -1,9 +1,9 @@
 # I-TALENTED
 A Project for practicing pure Javascript.
 Only Used HTML5, CSS3, Javascript (few xml)
-referred a free web taplate created by Designer.
+referred a free web template created by Designer.
 comments may be written in Korean.
 ------------------------
-preview below
+preview :
 >![Alt text](preview.png)
->source : https://freebiesbug.com/psd-freebies/mi-talent/
+>web template source : https://freebiesbug.com/psd-freebies/mi-talent/
