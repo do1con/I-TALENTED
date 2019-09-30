@@ -5,7 +5,7 @@
 <li>Referred a free web template created by Designer.</li>
 <li>Comments may be written in Korean.</li>
 </ul>
-------------------------
+
 preview :
->![Alt text](preview.png)
+><img src="preview.png">
 >web template source : https://freebiesbug.com/psd-freebies/mi-talent/
