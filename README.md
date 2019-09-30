@@ -1,8 +1,10 @@
 # I-TALENTED
-A Project for practicing pure Javascript.
-Only Used HTML5, CSS3, Javascript (few xml)
-referred a free web template created by Designer.
-comments may be written in Korean.
+<ul>
+<li>A Project for practicing pure Javascript.</li>
+<li>Only Used HTML5, CSS3, Javascript (few xml)</li>
+<li>Referred a free web template created by Designer.</li>
+<li>Comments may be written in Korean.</li>
+</ul>
 ------------------------
 preview :
 >![Alt text](preview.png)
