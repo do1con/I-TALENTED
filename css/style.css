@@ -37,11 +37,11 @@ section #mainContent .box1_1{width: 100%; height: 100%; position: absolute; back
 #mainContent span.leftSlideIndex{display: block; position: absolute; transform: rotate(-90deg); top: 450px; left: 65px; font-family: Open-sans; font-size: 2em;}
 /* main slide */
 section #mainContent #mainSlide{width: 100%; height: 100%; position: absolute; z-index: 2; position: relative;   overflow: hidden;}
-section #mainContent #mainSlide a{display: block; width: 250px; height: 80px; background-color: #b5d3d3; bottom: 0px; left: 50px; position: absolute; color: #ffffff; text-align: center; line-height: 80px; font-family: Mont; font-size: 0.9em; letter-spacing: 1px; transition: background-color 0.5s;}
+section #mainContent #mainSlide a{display: block; width: 250px; height: 80px; background-color: #b5d3d3; bottom: 0px; left: 50px; position: absolute; color: #ffffff; text-align: center; line-height: 80px; font-family: Mont; font-size: 0.9em; letter-spacing: 1px; transition: background-color 0.5s; z-index: 8;}
 section #mainContent #mainSlide .slideToggle{display: block; width: 80px; height: 80px; background-color: #b5d3d3; bottom: 0px; left: 300px; position: absolute; background: url(../img/pause-button.png) no-repeat center center; background-size: 50px; background-color: #ffffff; border: 0px; z-index: 9; cursor: pointer;}
 section #mainContent #mainSlide .lineForDesign{width: 190px; height: 4px; background-color: #ffffff; position: absolute; left: 540px; top: 460px;}
 section #mainContent #mainSlide .mainBox{width: 1000px; height:600px; position: absolute; top: 100px; left: 50%; margin-left: -500px; background-color: #ced2d3;}
-section #mainContent #mainSlide .mainSlide li{width: 1000px; height:600px; position: absolute; top: 100px; left: 50%; margin-left: -500px; display: none; transition: all 0.5s; opacity: 0;}
+section #mainContent #mainSlide .mainSlide li{width: 1000px; height:600px; position: absolute; top: 100px; left: 50%; margin-left: -500px; display: none; transition: all 0.5s; opacity: 0; bottom: 0px;}
 section #mainContent #mainSlide .mainSlide li h2{font-family: Open-sans; font-size: 5em; position: absolute; top: 20%; left: -6%; font-weight: normal; color: #212121;}
 section #mainContent #mainSlide .mainSlide li h3{font-family: Open-sans; font-size: 1em; position: absolute; top: 55%; left: -6%; font-weight: normal; color: #212121;}
 section #mainContent #mainSlide .mainSlide li img{position: absolute; bottom: 0;}
@@ -151,32 +151,83 @@ footer ul.footerSns li{float: left; display: block; width: 20px; height: 20px; m
 	header>.headerWrap>ul>li.title{position: absolute; left: 50%; margin-left: -200px;}
 	header>.headerWrap>ul>li.searchArea{float: right;}
 	header .headerWrap>ul>li.searchArea input#search{width: 70%;}
-	section>#mainContent{transform: scale(0.7); margin: 100px auto; width: 100%;}
+
+	section #mainContent{width: 100%;}
+	section #mainContent #mainSlide .mainSlide li{transform: scale(0.9); top: 130px;}
+
+	/*이다선*/
+	#mainSlide .slideNav {width: 230px;	right: 0;}
+	#tabGrid{width:100%;}
+	#tabGrid .modelListBox{width:90%;}
+	#latestNews{width:100%;}
+	#latestNews .adBanner{width: 100%;}
+	#latestNews .adBanner > li{width:31%;}
+	.gridSection{width:100%;}
+	.gridSection .leftSection{width:69.3%;}
+	.leftSection .leftTopSec {width: 100%;}
+	.leftSection .leftTopSec video {width: 100%;}
+	.leftSection .leftBotSec {width: 100%; margin-top: 0px;}
+	.leftBotSec .bottomBanner {width: 50%;}
+	.leftBotSec .bottomBanner a img{width: 100%;}
+	.leftBotSec .modelIntroduce{width: 50%; margin-left: 0px;}
+	.leftBotSec .modelIntroduce .introduceSlide{width:100%;}
+	.leftBotSec .modelIntroduce .introduceSlide li{width:100%;}
+	.leftBotSec .modelIntroduce .introduceSlide li a img{width:100%;}
+	.gridSection .rightSection {width: 30%; margin-left: 0px;}
+	.gridSection .rightSection a{height: 730px;}
+	.gridSection .rightSection a img{width: 100%;}
+	footer{width:100%;}
 }
 /* 태블릿 */
 @media (min-width:1025px) and (max-width:1280px){
-	body{width: 100%; overflow: hidden;}
+	body{width: 100%;}
 	header{width: 100%;}
 	header .headerWrap{width: 100%;}
-	.headerWrap>ul{width: 100%;}
+	.headerWrap>ul{width: 100%; position: relative;}
 	header>.headerWrap>ul>li{margin-left: 20px;}
 	header>.headerWrap>ul>li:first-child{margin-left: 5%;}
-	header>.headerWrap>ul>li.title{margin-left: 5%;}
-	header>.headerWrap>ul>li.searchArea{float: left;}
+	header>.headerWrap>ul>li.title{position: absolute; left: 50%; margin-left: -200px;}
+	header>.headerWrap>ul>li.searchArea{float: right;}
+	header .headerWrap>ul>li.searchArea input#search{width: 70%;}
 
+	section #mainContent{width: 100%;}
+	section #mainContent #mainSlide .mainSlide li{transform: scale(0.9); top: 130px;}
+
+	/*이다선*/
+	#mainSlide .slideNav {width: 230px;	right: 0;}
+	#tabGrid{width:100%;}
+	#tabGrid .modelListBox{width:90%;}
+	#latestNews{width:100%;}
+	#latestNews .adBanner{width: 100%;}
+	#latestNews .adBanner > li{width:31%;}
+	.gridSection{width:100%;}
+	.gridSection .leftSection{width:69.3%;}
+	.leftSection .leftTopSec {width: 100%;}
+	.leftSection .leftTopSec video {width: 100%;}
+	.leftSection .leftBotSec {width: 100%; margin-top: 0px;}
+	.leftBotSec .bottomBanner {width: 50%;}
+	.leftBotSec .bottomBanner a img{width: 100%;}
+	.leftBotSec .modelIntroduce{width: 50%; margin-left: 0px;}
+	.leftBotSec .modelIntroduce .introduceSlide{width:100%;}
+	.leftBotSec .modelIntroduce .introduceSlide li{width:100%;}
+	.leftBotSec .modelIntroduce .introduceSlide li a img{width:100%;}
+	.gridSection .rightSection {width: 30%; margin-left: 0px;}
+	.gridSection .rightSection a{height: 730px;}
+	.gridSection .rightSection a img{width: 100%;}
+	footer{width:100%;}
 	
 }
 /* 태블릿 (아이패드등 가로)*/
 @media (min-width:768px) and (max-width:1024px){
-	header{width: 100%;}
+
 }
 /* 저해상도 태블릿 */
 @media (min-width:768px) and (max-width:1024px) and (orientation: landscape){
-	header{width: 100%;}
+
 }
 /* 대부분의 스마트폰 모바일 세로 */
 @media (min-width:481px) and (max-width:767px){
-	header{width: 100%;}
+
 }
 
 /* define fonts */

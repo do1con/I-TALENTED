@@ -242,8 +242,7 @@ function listData(paramm){
 let currentBanner = 1;
 function slideModelBanner(next){
 	let prevBanner = document.querySelector('.modelIntroduce .introduceSlide>li.active');
-	let nextBanner = document.querySelectorAll('.modelIntroduce .introduceSlide>li')[next-1
-	];
+	let nextBanner = document.querySelectorAll('.modelIntroduce .introduceSlide>li')[next-1];
 	prevBanner.setAttribute('class','');
 	nextBanner.setAttribute('class','active');
 	slideModelIndexing(next);
@@ -279,11 +278,24 @@ autoModelSlide();
 /* index 구하기 */
 function getChildNumber(node){
   return Math.ceil(Array.prototype.indexOf.call(node.parentNode.childNodes, node)/2);
-}
-
+}	
 /* 유틸성 함수 끝 */
 
+/* 반응형  */
+window.addEventListener('resize', function(){
+	checkSize();
+});
 
+function checkSize(){
+	let mql = window.matchMedia("(min-width:1280px) and (max-width:1600px)");
+	if(mql.matches){
+		whenLess1600();
+	}
+};
+
+function whenLess1600(){
+	
+}
 
 
 
