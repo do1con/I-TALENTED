@@ -1,4 +1,6 @@
-﻿
+﻿"use strict";
+
+
 /* 메뉴 토글 */
 let menuStatus = false;
 function toggleMenu(){
@@ -139,6 +141,8 @@ function adaptAtag(index){
 /* 메인 슬라이드 끝 */
 
 /* 스크롤 시 header 변경 */
+
+window.addEventListener('scroll', styleHeader());
 function styleHeader(){
 	const header = document.querySelector('header');
 	const sct = window.scrollY;
@@ -296,27 +300,3 @@ function checkSize(){
 function whenLess1600(){
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
