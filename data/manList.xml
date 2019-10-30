@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding='utf-8'?>
+<list>
+	<person>
+		<name>
+			Nicolas Cage
+		</name>
+		<image>
+			<img src="img/man_01.jpg" width="250" alt="Nicolas Cage"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Kanye West
+		</name>
+		<image>
+			<img src="img/man_02.jpg" width="250" alt="Kanye West"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Keanu Reeves
+		</name>
+		<image>
+			<img src="img/man_03.jpg" width="250" alt="Keanu Reeves"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			King Krule
+		</name>
+		<image>
+			<img src="img/man_04.jpg" width="250" alt="King Krule"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Kamasi Washington
+		</name>
+		<image>
+			<img src="img/man_05.jpg" width="250" alt="Kamasi Washington"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Julian Casablancas
+		</name>
+		<image>
+			<img src="img/man_06.jpeg" width="250" alt="Julian Casablancas"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Kendrick Lamar
+		</name>
+		<image>
+			<img src="img/man_07.jpg" width="250" alt="Kendrick Lamar"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			LCD Soundsystem
+		</name>
+		<image>
+			<img src="img/man_08.jpg" width="250" alt="LCD Soundsystem"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Frank Ocean
+		</name>
+		<image>
+			<img src="img/man_09.jpg" width="250" alt="Frank Ocean"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Sufjan Stevens
+		</name>
+		<image>
+			<img src="img/man_10.jpg" width="250" alt="Sufjan Stevens"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Bon Iver
+		</name>
+		<image>
+			<img src="img/man_11.jpg" width="250" alt="Bon Iver"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Perfume Genius
+		</name>
+		<image>
+			<img src="img/man_12.jpg" width="250" alt="Perfume Genius"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Tyler, The Creator
+		</name>
+		<image>
+			<img src="img/man_13.jpg" width="250" alt="Tyler, The Creator"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Danny Brown
+		</name>
+		<image>
+			<img src="img/man_14.jpg" width="250" alt="Danny Brown"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Morrissey
+		</name>
+		<image>
+			<img src="img/man_15.jpg" width="250" alt="Morrissey"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Liam Gallagher
+		</name>
+		<image>
+			<img src="img/man_16.jpg" width="250" alt="Liam Gallagher"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Casey Affleck
+		</name>
+		<image>
+			<img src="img/man_17.png" width="250" alt="Casey Affleck"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Lucas Hedges
+		</name>
+		<image>
+			<img src="img/man_18.jpg" width="250" alt="Lucas Hedges"/>
+		</image>
+	</person>
+</list>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding='utf-8'?>
+<list>
+	<person>
+		<name>
+			Grimes
+		</name>
+		<image>
+			<img src="img/woman_01.jpg" width="250" alt="Grimes"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			St.Vincent
+		</name>
+		<image>
+			<img src="img/woman_02.jpg" width="250" alt="St.Vincent"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Fiona Apple
+		</name>
+		<image>
+			<img src="img/woman_03.jpeg" width="250" alt="Fiona Apple"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			M.I.A
+		</name>
+		<image>
+			<img src="img/woman_04.png" width="250" alt="M.I.A"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Lorde
+		</name>
+		<image>
+			<img src="img/woman_05.jpg" width="250" alt="Lorde"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			SZA
+		</name>
+		<image>
+			<img src="img/woman_06.jpg" width="250" alt="SZA"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			FKA Twigs
+		</name>
+		<image>
+			<img src="img/woman_07.jpg" width="250" alt="FKA Twigs"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Janelle Monae
+		</name>
+		<image>
+			<img src="img/woman_08.jpg" width="250" alt="Janelle Monae"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Bjork
+		</name>
+		<image>
+			<img src="img/woman_09.jpg" width="250" alt="Bjork"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			U.S. Girls
+		</name>
+		<image>
+			<img src="img/woman_10.jpg" width="250" alt="U.S. Girls"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Soccer Mommy
+		</name>
+		<image>
+			<img src="img/woman_11.jpg" width="250" alt="Soccer Mommy"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Snail Mail
+		</name>
+		<image>
+			<img src="img/woman_12.jpg" width="250" alt="Snail Mail"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Sharon Van Etten
+		</name>
+		<image>
+			<img src="img/woman_13.jpg" width="250" alt="Sharon Van Etten"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Laura Marling 
+		</name>
+		<image>
+			<img src="img/woman_14.jpg" width="250" alt="Laura Marling"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Ariana Grande
+		</name>
+		<image>
+			<img src="img/woman_15.jpg" width="250" alt="Ariana Grande"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Kero Kero Bonito
+		</name>
+		<image>
+			<img src="img/woman_16.jpg" width="250" alt="Kero Kero Bonito"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Kiernan Shipka
+		</name>
+		<image>
+			<img src="img/woman_17.jpg" width="250" alt="Kiernan Shipka"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Ellen Page
+		</name>
+		<image>
+			<img src="img/woman_18.jpg" width="250" alt="Ellen Page"/>
+		</image>
+	</person>
+</list>

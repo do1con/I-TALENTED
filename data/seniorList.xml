@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding='utf-8'?>
+<list>
+	<person>
+		<name>
+			Olga
+		</name>
+		<image>
+			<img src="img/senior_01.jpg" width="250" alt="Olga"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Valentina
+		</name>
+		<image>
+			<img src="img/senior_02.jpg" width="250" alt="Valentina"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Sofia
+		</name>
+		<image>
+			<img src="img/senior_03.jpg" width="250" alt="Sofia"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Tatyana
+		</name>
+		<image>
+			<img src="img/senior_04.jpg" width="250" alt="Tatyana"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Ludmila M
+		</name>
+		<image>
+			<img src="img/senior_05.jpg" width="250" alt="Ludmila M"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Gala
+		</name>
+		<image>
+			<img src="img/senior_06.jpg" width="250" alt="Gala"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Victor
+		</name>
+		<image>
+			<img src="img/senior_07.jpg" width="250" alt="Victor"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Sergey
+		</name>
+		<image>
+			<img src="img/senior_08.jpg" width="250" alt="Sergey"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Ivan
+		</name>
+		<image>
+			<img src="img/senior_09.jpg" width="250" alt="Ivan"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Larisa
+		</name>
+		<image>
+			<img src="img/senior_10.jpg" width="250" alt="Larisa"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Yuriy
+		</name>
+		<image>
+			<img src="img/senior_11.jpg" width="250" alt="Yuriy"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Victor
+		</name>
+		<image>
+			<img src="img/senior_12.jpg" width="250" alt="Victor"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Svetlana M
+		</name>
+		<image>
+			<img src="img/senior_13.jpg" width="250" alt="Svetlana M"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Natalia
+		</name>
+		<image>
+			<img src="img/senior_14.jpg" width="250" alt="Natalia"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			SvetLana
+		</name>
+		<image>
+			<img src="img/senior_15.jpg" width="250" alt="SvetLana"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Boris
+		</name>
+		<image>
+			<img src="img/senior_16.jpg" width="250" alt="Boris"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Nina
+		</name>
+		<image>
+			<img src="img/senior_17.jpg" width="250" alt="Nina"/>
+		</image>
+	</person>
+	<person>
+		<name>
+			Galina
+		</name>
+		<image>
+			<img src="img/senior_18.jpg" width="250" alt="Galina"/>
+		</image>
+	</person>
+</list>
