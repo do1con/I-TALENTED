@@ -142,7 +142,7 @@ footer ul.footerSns li{float: left; display: block; width: 20px; height: 20px; m
 /* 반응형  */
 /* 1600px 아래 */
 @media (min-width:1280px) and (max-width:1600px){
-	body{width: 100%;}
+	/* body{width: 100%;}
 	header{width: 100%;}
 	header .headerWrap{width: 100%;}
 	.headerWrap>ul{width: 100%; position: relative;}
@@ -153,10 +153,10 @@ footer ul.footerSns li{float: left; display: block; width: 20px; height: 20px; m
 	header .headerWrap>ul>li.searchArea input#search{width: 70%;}
 
 	section #mainContent{width: 100%;}
-	section #mainContent #mainSlide .mainSlide li{transform: scale(0.9); top: 130px;}
+	section #mainContent #mainSlide .mainSlide li{transform: scale(0.9); top: 130px;} */
 
-	/*이다선*/
-	#mainSlide .slideNav {width: 230px;	right: 0;}
+	/*LEEDA*/
+	/* #mainSlide .slideNav {width: 230px;	right: 0;}
 	#tabGrid{width:100%;}
 	#tabGrid .modelListBox{width:90%;}
 	#latestNews{width:100%;}
@@ -176,11 +176,11 @@ footer ul.footerSns li{float: left; display: block; width: 20px; height: 20px; m
 	.gridSection .rightSection {width: 30%; margin-left: 0px;}
 	.gridSection .rightSection a{height: 730px;}
 	.gridSection .rightSection a img{width: 100%;}
-	footer{width:100%;}
+	footer{width:100%;} */
 }
 /* 태블릿 */
 @media (min-width:1025px) and (max-width:1280px){
-	body{width: 100%;}
+	/* body{width: 100%;}
 	header{width: 100%;}
 	header .headerWrap{width: 100%;}
 	.headerWrap>ul{width: 100%; position: relative;}
@@ -191,10 +191,10 @@ footer ul.footerSns li{float: left; display: block; width: 20px; height: 20px; m
 	header .headerWrap>ul>li.searchArea input#search{width: 70%;}
 
 	section #mainContent{width: 100%;}
-	section #mainContent #mainSlide .mainSlide li{transform: scale(0.9); top: 130px;}
+	section #mainContent #mainSlide .mainSlide li{transform: scale(0.9); top: 130px;} */
 
-	/*이다선*/
-	#mainSlide .slideNav {width: 230px;	right: 0;}
+	/*LEEDA*/
+	/* #mainSlide .slideNav {width: 230px;	right: 0;}
 	#tabGrid{width:100%;}
 	#tabGrid .modelListBox{width:90%;}
 	#latestNews{width:100%;}
@@ -214,7 +214,7 @@ footer ul.footerSns li{float: left; display: block; width: 20px; height: 20px; m
 	.gridSection .rightSection {width: 30%; margin-left: 0px;}
 	.gridSection .rightSection a{height: 730px;}
 	.gridSection .rightSection a img{width: 100%;}
-	footer{width:100%;}
+	footer{width:100%;} */
 	
 }
 /* 태블릿 (아이패드등 가로)*/
