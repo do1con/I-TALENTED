@@ -47,6 +47,7 @@ section #mainContent #mainSlide .mainSlide li h3{font-family: Open-sans; font-si
 section #mainContent #mainSlide .mainSlide li img{position: absolute; bottom: 0;}
 section #mainContent #mainSlide .mainSlide li:nth-child(2) img{right: 10px;}
 section #mainContent #mainSlide .mainSlide li:nth-child(3) img{right: 10px;}
+section #mainContent #mainSlide .mainSlide li:nth-child(4) img{right: 20px;}
 section #mainContent #mainSlide .mainSlide li.active{display: block; opacity: 1;}
 /* main slide navigator */
 #mainSlide .slideNav{width: 400px; height: 250px; position: absolute; top: 450px; right: -150px;}
