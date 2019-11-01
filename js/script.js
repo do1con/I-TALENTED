@@ -37,7 +37,7 @@ function changeSlide(nextSlide){
 	activeSlide.style.opacity = '0';
 
 	function callSlide (callback){
-		activeSlide.style.display = 'none';
+		activeSlide.style.opacity = 0;
 		document.querySelectorAll('#mainSlide>.mainSlide>li')[0].setAttribute('class', '');
 		document.querySelectorAll('#mainSlide>.mainSlide>li')[1].setAttribute('class', '');
 		document.querySelectorAll('#mainSlide>.mainSlide>li')[2].setAttribute('class', '');
