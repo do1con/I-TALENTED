@@ -30,22 +30,32 @@ function openSearchBar(){
 /* change slide function */
 let currentSlide = 1;
 function changeSlide(nextSlide){
-	const activeSlide = document.querySelector('#mainSlide .mainSlide .active');
+	let activeSlide = document.querySelector('#mainSlide .active');
 	if(activeSlide === nextSlide){
 		return;
 	}
 	activeSlide.style.opacity = '0';
-	setTimeout(function(){
+
+	function callSlide (callback){
 		activeSlide.style.display = 'none';
-		activeSlide.setAttribute('class','');
-	},500);
-	nextSlide.style.display = "block";
-	nextSlide.style.left = "70%";
-	setTimeout(function(){
-		nextSlide.style.opacity = "1";
-		nextSlide.style.left = "50%";
-		nextSlide.setAttribute('class','active');
-	},500);
+		document.querySelectorAll('#mainSlide>.mainSlide>li')[0].setAttribute('class', '');
+		document.querySelectorAll('#mainSlide>.mainSlide>li')[1].setAttribute('class', '');
+		document.querySelectorAll('#mainSlide>.mainSlide>li')[2].setAttribute('class', '');
+		document.querySelectorAll('#mainSlide>.mainSlide>li')[3].setAttribute('class', '');
+		callback();
+	}
+	setTimeout(callSlide(function(){
+		nextSlide.style.display = "block";
+		nextSlide.style.left = "70%";
+		setTimeout(function(){
+			nextSlide.style.opacity = "1";
+			nextSlide.style.left = "50%";
+			if(!document.querySelector('#mainSlide>.mainSlide>.active')){
+				nextSlide.setAttribute('class','active');
+			}
+		},500);
+	}), 500);
+
 	currentSlide = getChildNumber(nextSlide);;
 	changeIndex(currentSlide);
 	adaptAtag(currentSlide);
@@ -63,6 +73,7 @@ function startSlide(){
 	},2000);
 }
 startSlide();
+
 /* 자동진행 멈춤 */
 function stopSlide(){
 	clearInterval(intervalSlide);
@@ -107,11 +118,15 @@ function changeIndex(next){
 }
 /* 오른쪽 인덱스 클릭시 슬라이드 */
 function slidedByIndex(element){
+	
 	clearInterval(intervalSlide);
 	const slides = document.querySelector('#mainSlide .mainSlide');
 	const nextSlide = slides.getElementsByTagName('li')[getChildNumber(element) - 1];
 	changeSlide(nextSlide);
-	setTimeout(startSlide(),2000);
+	if(slidePlay === 1) {
+		setTimeout(startSlide(),2000);
+		document.querySelector('#mainSlide .slideToggle').style.backgroundImage = 'url("img/pause-button.png")';
+	}
 }
 /* 슬라이드마다 A태그 경로&스타일 변경 */
 function adaptAtag(index){

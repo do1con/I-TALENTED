@@ -41,11 +41,12 @@ section #mainContent #mainSlide a{display: block; width: 250px; height: 80px; ba
 section #mainContent #mainSlide .slideToggle{display: block; width: 80px; height: 80px; background-color: #b5d3d3; bottom: 0px; left: 300px; position: absolute; background: url(../img/pause-button.png) no-repeat center center; background-size: 50px; background-color: #ffffff; border: 0px; z-index: 9; cursor: pointer;}
 section #mainContent #mainSlide .lineForDesign{width: 190px; height: 4px; background-color: #ffffff; position: absolute; left: 540px; top: 460px;}
 section #mainContent #mainSlide .mainBox{width: 1000px; height:600px; position: absolute; top: 100px; left: 50%; margin-left: -500px; background-color: #ced2d3;}
-section #mainContent #mainSlide .mainSlide li{width: 1000px; height:600px; position: absolute; top: 100px; left: 50%; margin-left: -500px; display: none; transition: all 0.5s; opacity: 0; bottom: 0px;}
+section #mainContent #mainSlide .mainSlide li{width: 1000px; height:600px; position: absolute; top: 100px; left: 50%; margin-left: -500px; transition: all 0.5s; opacity: 0; bottom: 0px;}
 section #mainContent #mainSlide .mainSlide li h2{font-family: Open-sans; font-size: 5em; position: absolute; top: 20%; left: -6%; font-weight: normal; color: #212121;}
 section #mainContent #mainSlide .mainSlide li h3{font-family: Open-sans; font-size: 1em; position: absolute; top: 55%; left: -6%; font-weight: normal; color: #212121;}
 section #mainContent #mainSlide .mainSlide li img{position: absolute; bottom: 0;}
-section #mainContent #mainSlide .mainSlide li:first-child img{right: 10px;}
+section #mainContent #mainSlide .mainSlide li:nth-child(2) img{right: 10px;}
+section #mainContent #mainSlide .mainSlide li:nth-child(3) img{right: 10px;}
 section #mainContent #mainSlide .mainSlide li.active{display: block; opacity: 1;}
 /* main slide navigator */
 #mainSlide .slideNav{width: 400px; height: 250px; position: absolute; top: 450px; right: -150px;}
