@@ -144,6 +144,7 @@ footer ul.footerSns li{float: left; display: block; width: 20px; height: 20px; m
 /* 반응형  */
 /* 1600px 아래 */
 @media (min-width:1280px) and (max-width:1600px){
+	body{width: 100%;}
 	/* body{width: 100%;}
 	header{width: 100%;}
 	header .headerWrap{width: 100%;}
